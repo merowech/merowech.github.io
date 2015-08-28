@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Noto Sans', sans-serif;
+    background-color: GhostWhite;
+}
+
+/* Header */
+.header {
+
+}
+
+#header_big {
+    display: block;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    background-color: white;
+}
+
+#header_small {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    background-color: white;
+}
+
+.header_element {
+    margin: 5px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+#logo_big {
+    margin: 50px;
+}
+
+/*** Site ***/
+#site {
+    margin-top: 200px;
+    height: 150%;
+    display: block;
+    position: relative;
+
+}
+
+/* Left Bar */
+#left_bar {
+
+    width: 15%;
+    height: 100%;
+
+    margin: 10px;
+
+    background-color: white;
+
+}
+
+#left_bar ul li {
+    list-style-type: none;
+}
+
+/* Content */
+#content {
+
+    width: 80%;
+    height: 100%;
+
+    margin: 10px;
+
+}
+
+#content_main {
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+
+    background-color: white;
+
+}
+
+
+
+/* Misc */
+.btn_classic {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+
+    background-color: #283593;
+}
+
+.gray_shadow {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+}
+
+.align_mid {
+    margin: inital auto;
+}
+
+.inline {
+    display: inline-block;
+
+    vertical-align: top;
+}
