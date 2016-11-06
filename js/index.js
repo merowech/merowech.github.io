@@ -1,4 +1,4 @@
-var entries = ["first", "second", "third"];
+var entries = [[1, "Start"], [2, "Tod"], [3, "Okkultismus/Glaube"]];
 
 
 
@@ -22,7 +22,7 @@ var blog = function(name) {
 
 var about = function() {
 
-    var file = "entries/first";
+    var file = "entries/1";
 
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file);
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     $("#blogposts").append("<ul>");
     for (var entry in entries) {
-        $("#blogposts").append("<li><a onclick=\"blog('" + entries[entry] + "');\">" + entries[entry] + "</a></li>");
+        $("#blogposts").append("<li><a onclick=\"blog('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
     }
     $("#blogposts").append("</ul>");
 
