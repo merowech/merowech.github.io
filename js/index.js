@@ -1,29 +1,51 @@
-(function () {
-    $(window).scroll(function(){
-        var currentScroll = $(this).scrollTop();
-        if ($(this).scrollTop() > 0){
-            $("#header_big").slideUp(1000);
-            $("#header_small").slideDown(1000);
+var entries = ["first", "second", "third"];
 
-            $("#site").css("margin-top", "50px");
 
-            //$("#left_bar").css("display", "none");
-            //$("#content").css("margin-left", "15%");
-        } else {
-            $("#header_small").stop(true, true);
-            $("#header_small").hide();
-            $("#header_big").stop(true, true);
-            $("#header_big").show();
 
-            $("#site").css("margin-top", "200px");
+var blog = function(name) {
 
-            //$("#left_bar").css("display", "");
-            //$("#content").css("margin-left", "");
+    var file = "entries/"+name;
+
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                $("#content_main").html(allText.replace(/\n/g, "<br>"));
+            }
         }
-    });
-}());
-
-
-var gallery = function () {
+    }
+    rawFile.send(null);
 
 };
+
+var about = function() {
+
+    var file = "entries/first";
+
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                $("#content_main").html(allText.replace(/\n/g, "<br>"));
+            }
+        }
+    }
+    rawFile.send(null);
+
+};
+
+$(document).ready(function() {
+
+    $("#blogposts").append("<ul>");
+    for (var entry in entries) {
+        $("#blogposts").append("<li><a onclick=\"blog('" + entries[entry] + "');\">" + entries[entry] + "</a></li>");
+    }
+    $("#blogposts").append("</ul>");
+
+    about();
+
+});
