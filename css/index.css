@@ -9,8 +9,8 @@ html, body {
 
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     line-height: 150%;
-    color: GhostWhite;
-    background: #303030;
+    color: #000000;
+    background: #FFFFFF;
 }
 
 /* Left Bar */
@@ -23,22 +23,21 @@ html, body {
 
 }
 
-#left_bar ul li {
+#left_bar ul {
     list-style-type: none;
+    padding-left: 10px;
 }
 
 /* Content */
 #content {
 
-    width: 80%;
+    max-width: calc(85% - 40px);
     height: 100%;
     margin: 10px;
 
 }
 
 #content_main {
-    margin-left: 5%;
-    width: 90%;
     height: 100%;
     padding: 20px;
 

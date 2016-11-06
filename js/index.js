@@ -40,11 +40,11 @@ var about = function() {
 
 $(document).ready(function() {
 
-    $("#blogposts").append("<ul>");
+    $("#left_bar").append("<ul id=\"blogposts\">");
     for (var entry in entries) {
         $("#blogposts").append("<li><a onclick=\"blog('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
     }
-    $("#blogposts").append("</ul>");
+    $("#left_bar").append("</ul>");
 
     about();
 
