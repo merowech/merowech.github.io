@@ -1,4 +1,5 @@
-var entries = [[1, "Start"], [2, "Tod"], [3, "Okkultismus/Glaube"]];
+var entries = [[1, "Start"], [2, "Tod"], [3, "Okkultismus"],
+                [4, "Philosophisches Denken"]];
 
 
 
@@ -12,7 +13,16 @@ var blog = function(name) {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 var allText = rawFile.responseText;
-                $("#content_main").html(allText.replace(/\n/g, "<br>"));
+                var split_text = allText.split("\n");
+
+                var html = "<div>";
+                for (var i in split_text) {
+                    html += "<span class='linenumber'>" + i + "</span>";
+                    html += "<span>" + split_text[i] + "</span><br>";
+                }
+                html += "</div>";
+
+                $("#content_main").html(html);
             }
         }
     }
@@ -20,23 +30,7 @@ var blog = function(name) {
 
 };
 
-var about = function() {
 
-    var file = "entries/1";
-
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4) {
-            if (rawFile.status === 200 || rawFile.status == 0) {
-                var allText = rawFile.responseText;
-                $("#content_main").html(allText.replace(/\n/g, "<br>"));
-            }
-        }
-    }
-    rawFile.send(null);
-
-};
 
 $(document).ready(function() {
 
@@ -46,6 +40,6 @@ $(document).ready(function() {
     }
     $("#left_bar").append("</ul>");
 
-    about();
+    blog(1);
 
 });
