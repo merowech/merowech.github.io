@@ -17,16 +17,18 @@ html, body {
 /* Left Bar */
 #left_bar {
 
-    width: 15%;
+    width: 20%;
     height: 100%;
-
-    margin: 10px;
 
 }
 
 #left_bar ul {
     list-style-type: none;
     padding-left: 10px;
+}
+
+#left_bar ul li {
+    padding: 5px;
 }
 
 .linenumber {
@@ -36,13 +38,15 @@ html, body {
     display: inline-block;
 }
 
+.highlight {
+    background: #262829;
+}
+
 /* Content */
 #content {
-    max-width: calc(85% - 40px);
+    max-width: calc(80% - 40px);
     height: 100%;
     margin: 10px;
-
-    background: #262829;
 
 }
 
@@ -50,7 +54,7 @@ html, body {
     height: 100%;
     padding: 10px;
 
-    width: 700px;
+    width: 710px;
 
 }
 

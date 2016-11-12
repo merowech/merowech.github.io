@@ -1,5 +1,5 @@
 var entries = [[1, "Start"], [2, "Tod"], [3, "Okkultismus"],
-                [4, "Philosophisches Denken"]];
+                [4, "Philosophisches Denken"], [5, "Logik"]];
 
 
 
@@ -12,6 +12,10 @@ var blog = function(name) {
     rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
+                 for (var entry in entries) {
+                    $("#"+entries[entry]).removeClass("highlight");
+                 }
+
                 var allText = rawFile.responseText;
                 var split_text = allText.split("\n");
 
@@ -23,6 +27,8 @@ var blog = function(name) {
                 html += "</div>";
 
                 $("#content_main").html(html);
+
+                $("#"+name).addClass("highlight");
             }
         }
     }
@@ -36,7 +42,7 @@ $(document).ready(function() {
 
     $("#left_bar").append("<ul id=\"blogposts\">");
     for (var entry in entries) {
-        $("#blogposts").append("<li><a onclick=\"blog('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
+        $("#blogposts").append("<li id=\""+entries[entry][0]+"\"><a onclick=\"blog('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
     }
     $("#left_bar").append("</ul>");
 
