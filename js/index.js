@@ -17,6 +17,7 @@ var blog = function(name) {
                  }
 
                 var allText = rawFile.responseText;
+                // allText = scaleToWidth(allText, 80);
                 var split_text = allText.split("\n");
 
                 var html = "<div>";
@@ -36,7 +37,33 @@ var blog = function(name) {
 
 };
 
+var scaleToWidth = function(text, line_length) {
+    var splits = text.split(/^\n/gm);
 
+    var container_helper = $('<span></span>').css({display:'none'}).appendTo($('body'));
+    line_length = line_length*8;
+    console.log(line_length);
+
+    var ret = "";
+    for (var i = 0; i < splits.length; i++) {
+        splits[i] = splits[i].replace(/\n/g, " ");
+        var words = splits[i].split(" ");
+        var temp = "";
+        var temp_res = "";
+
+        for (var j = 0; j < words.length; j++) {
+            if (container_helper.text(temp + words[j] + " ").width() > line_length) {
+                temp_res += temp + "\n";
+                temp = "";
+            }
+            temp += words[j] + " ";
+        }
+        temp_res += temp + "\n";
+        ret += temp_res + "\n";
+    }
+
+    return ret;
+};
 
 $(document).ready(function() {
 
