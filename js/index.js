@@ -1,7 +1,9 @@
 var entries = [[1, "Start"], [2, "Tod"], [3, "Okkultismus"],
                 [4, "Philosophisches Denken"], [5, "Logik"]];
 
-
+var change = function(name) {
+    window.location.href = window.location.origin + window.location.pathname + "?article=" + name;
+}
 
 var blog = function(name) {
 
@@ -69,10 +71,14 @@ $(document).ready(function() {
 
     $("#left_bar").append("<ul id=\"blogposts\">");
     for (var entry in entries) {
-        $("#blogposts").append("<li id=\""+entries[entry][0]+"\"><a onclick=\"blog('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
+        $("#blogposts").append("<li id=\""+entries[entry][0]+"\"><a onclick=\"change('" + entries[entry][0] + "');\">" + entries[entry][1] + "</a></li>");
     }
     $("#left_bar").append("</ul>");
 
-    blog(1);
+    if (window.location.href.indexOf("article") > 0) {
+        blog(window.location.href.substring(window.location.href.indexOf("=")+1));
+    } else {
+        blog(1);
+    }
 
 });
