@@ -70,7 +70,7 @@ var scaleToWidth = function(text, line_length, font) {
     var metrics = context.measureText(" ");
 
     var width = line_length * metrics.width;
-    $("#content_main").css("width", (width + 35) + "px");
+    $("#content_main").css("width", (width + 40) + "px");
 
     var ret = "";
     for (var i = 0; i < splits.length; i++) {
