@@ -34,7 +34,7 @@ html, body {
 .linenumber {
     margin-right: 15px;
     text-align: right;
-    width: 18px;
+    width: 33px;
     display: inline-block;
 }
 
@@ -54,7 +54,7 @@ html, body {
     height: 100%;
     padding: 10px;
 
-    width: 710px;
+    width: 680px;
 
 }
 
