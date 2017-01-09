@@ -2,8 +2,9 @@ var entries = [
     [1, "Start"],
     [2, "Tod"],
     [3, "Okkultismus"],
-    [4, "Philosophisches Denken"]
-    //[5, "Logik"]
+    [4, "Philosophisches Denken"],
+    [5, "AI"],
+    [6, "Politische Standpunkte"]
 ];
 
 var change = function(name) {
@@ -68,8 +69,9 @@ var scaleToWidth = function(text, line_length, font) {
 
     context.font = font;
     var metrics = context.measureText(" ");
+    var space_length = metrics.width;
 
-    var width = line_length * metrics.width;
+    var width = line_length * space_length;
     $("#content_main").css("width", (width + 40) + "px");
 
     var ret = "";
@@ -81,9 +83,14 @@ var scaleToWidth = function(text, line_length, font) {
 
         for (var j = 0; j < words.length; j++) {
             metrics = context.measureText(temp + words[j] + " ");
-            if (metrics.width > width) {
+            if (metrics.width+space_length > width) {
                 temp_res += temp + "\n";
                 temp = "";
+            }
+            if (words[j] == "--") {
+                temp_res += temp + "\n";
+                temp = "";
+                words[j] = "-";
             }
             temp += words[j] + " ";
         }
