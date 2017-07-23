@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
 html, body {
     margin: 0px;
     padding: 0px;
@@ -9,64 +8,85 @@ html, body {
 
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     line-height: 150%;
-    color: GhostWhite;
-    background: #303030;
+    background: white;
 }
 
-/* Left Bar */
-#left_bar {
+nav {
+    font-family: 'Open Sans', 'Lato', sans-serif;
 
-    width: 15%;
-    height: 100%;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
 
-    margin: 10px;
-
+    background: #fff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
 }
 
-#left_bar ul li {
-    list-style-type: none;
+nav #nav {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-/* Content */
-#content {
-
-    width: 80%;
-    height: 100%;
-    margin: 10px;
-
-}
-
-#content_main {
-    margin-left: 5%;
-    width: 90%;
-    height: 100%;
-    padding: 20px;
-
-}
-
-
-
-/* Misc */
-.btn_classic {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-
-    background-color: #283593;
-}
-
-.gray_shadow {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-}
-
-.align_mid {
-    margin: inital auto;
-}
-
-.inline {
+nav #nav #nav_name {
     display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2b2b2b;
+}
 
-    vertical-align: top;
+nav #nav #nav_name a {
+    text-decoration: none;
+    transition: color 0.6s ease;
+}
+
+div .inline {
+    display: inline-block;
+}
+
+div .center {
+    vertical-align: middle;
+}
+
+div #home {
+    padding: 0 50px;
+}
+
+div #profile {
+    width: 25%;
+    padding: 20px;
+}
+
+div #profile_desc_header {
+    font-size: 26px;
+}
+
+div #profile_desc_info {
+    font-size: 16px;
+    color: gray;
+}
+
+div .location {
+    font-size: 14px;
+    color: gray;
+}
+
+div #info {
+    margin-top: 30px;
+    width: 70%;
+}
+
+div #greetings {
+    font-size: 30px;
+}
+
+div #interests {
+    width: 30%;
+    padding: 20px;
+}
+
+div #experience {
+    width: 60%;
 }
