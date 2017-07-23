@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
 html, body {
     margin: 0px;
     padding: 0px;
@@ -10,77 +9,85 @@ html, body {
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     font-size: 14px;
     line-height: 150%;
-    color: #999999;
-    background: #000000;
+    background: white;
 }
 
-/* Left Bar */
-#left_bar {
+nav {
+    font-family: 'Open Sans', 'Lato', sans-serif;
 
-    width: 20%;
-    height: 100%;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
 
+    background: #fff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
 }
 
-#left_bar ul {
-    list-style-type: none;
-    padding-left: 10px;
+nav #nav {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-#left_bar ul li {
-    padding: 5px;
+nav #nav #nav_name {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2b2b2b;
 }
 
-.linenumber {
-    margin-right: 15px;
-    text-align: right;
-    width: 33px;
+nav #nav #nav_name a {
+    text-decoration: none;
+    transition: color 0.6s ease;
+}
+
+div .inline {
     display: inline-block;
 }
 
-.highlight {
-    background: #262829;
+div .center {
+    vertical-align: middle;
 }
 
-/* Content */
-#content {
-    max-width: calc(80% - 40px);
-    height: 100%;
-    margin: 10px;
-
+div #home {
+    padding: 0 50px;
 }
 
-#content_main {
-    height: 100%;
-    padding: 10px;
-
-    width: 680px;
-
+div #profile {
+    width: 25%;
+    padding: 20px;
 }
 
-
-
-/* Misc */
-.btn_classic {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-
-    background-color: #283593;
+div #profile_desc_header {
+    font-size: 26px;
 }
 
-.gray_shadow {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
-    box-shadow: 0px 0px 12px 0px rgba(140,140,140,0.68);
+div #profile_desc_info {
+    font-size: 16px;
+    color: gray;
 }
 
-.align_mid {
-    margin: inital auto;
+div .location {
+    font-size: 14px;
+    color: gray;
 }
 
-.inline {
-    display: inline-block;
+div #info {
+    margin-top: 30px;
+    width: 70%;
+}
 
-    vertical-align: top;
+div #greetings {
+    font-size: 30px;
+}
+
+div #interests {
+    width: 30%;
+    padding: 20px;
+}
+
+div #experience {
+    width: 60%;
 }
