@@ -1,0 +1,58 @@
+import React, { useState, useEffect } from 'react';
+import { Header } from './components/header';
+import { About } from './components/about';
+import { Resume } from './components/resume';
+
+import $ from 'jquery';
+
+import 'font-awesome/css/font-awesome.min.css';
+import 'font-awesome/fonts/fontawesome-webfont.ttf';
+import './App.css';
+
+function App() {
+
+  const [data, setData] = useState({});
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+      $.ajax({
+        url:'/data.json',
+        dataType:'json',
+        cache: false,
+        success: function(result){
+          setData(prevState => ({
+            ...prevState,
+            resumeData: result
+          }));
+          setIsLoaded(true);
+        },
+        error: function(xhr, status, err){
+          setIsLoaded(true);
+          setError(err);
+        }
+      });
+  }, [])
+
+  if (error) {
+    return (
+      <div>Error: {error.message}</div>
+    );
+  } else if (!isLoaded) {
+    return (
+      <div>Loading...</div>
+    );
+  } else {
+    console.log(data);
+    return (
+      <div className="App">
+        <Header data={data.resumeData.main}/>
+        <About data={data.resumeData.main}/>
+        <Resume data={data.resumeData.resume}/>
+      </div>
+    );
+  }
+}
+
+
+export default App;

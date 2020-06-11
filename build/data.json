@@ -1,0 +1,143 @@
+{
+    "main": {
+        "name": "Udo Schlegel",
+        "occupation": "PhD Candidate & Research Associate",
+        "description": "I am interested in artificial intelligence and security, especially deep learning and cyber security, but also predictive policing and machine learning in general. My current research evolves around a visualized understanding of deep neural networks for time series",
+        "image": "udo-schlegel-k.jpg",
+        "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+        "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+        "email": "udo.m.schlegel@gmail.com",
+        "phone": "",
+        "address": {
+            "street": "Universitätsstraße 10",
+            "city": "Konstanz",
+            "state": "Baden-Württemberg",
+            "zip": "78464"
+        },
+        "website": "http://www.schlegel.dbvis.de",
+        "social": [
+            {
+                "name": "twitter",
+                "url": "http://twitter.com/TheMerowech",
+                "className": "fa fa-twitter"
+            }, {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/udo-schlegel",
+                "className": "fa fa-linkedin"
+            }, {
+                "name": "github",
+                "url": "http://github.com/merowech",
+                "className": "fa fa-github"
+            }
+        ]
+    },
+    "resume": {
+        "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+        "education": [
+            {
+                "school": "University of Konstanz",
+                "degree": "PhD Computer Science",
+                "graduated": "Currently enrolled",
+                "description": "Focus on explainable AI and visual explainable AI for time series"
+            }, {
+                "school": "University of Konstanz",
+                "degree": "Master, Computer and Information Science",
+                "graduated": "Juli 2018",
+                "description": "Focus on Machine Learning and especially Deep Learning"
+            }, {
+                "school": "University of Konstanz",
+                "degree": "Bachelor, Information Engineering",
+                "graduated": "October 2016",
+                "description": "Focus on Machine Learning and Visualization"
+            }
+        ],
+        "work": [
+            {
+                "company": "University of Konstanz",
+                "title": "PhD Candidate & Research Associate",
+                "years": "October 2018 - Present",
+                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+            }, {
+                "company": "Freelancer",
+                "title": "Machine Learning Consultant",
+                "years": "July 2018 - October 2018",
+                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+            }, {
+                "company": "Steinbeis Kompetenzzentrum",
+                "title": "Student Research Assistant",
+                "years": "October 2017 - June 2018",
+                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+            }, {
+                "company": "University of Konstanz",
+                "title": "Student Research Assistant",
+                "years": "March 2015 - June 2018",
+                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+            }
+        ],
+        "skills": [
+            {
+                "name": "Git",
+                "level": "60%"
+            }, {
+                "name": "Illustrator",
+                "level": "55%"
+            }, {
+                "name": "ReactJs",
+                "level": "50%"
+            }, {
+                "name": "CSS",
+                "level": "90%"
+            }, {
+                "name": "HTML5",
+                "level": "80%"
+            }, {
+                "name": "VueJs",
+                "level": "50%"
+            }, {
+                "name": "MongoDB",
+                "level": "80%"
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [
+            {
+                "title": "Canadian Wanderlust",
+                "category": "My Travel Blog for my post-university travels",
+                "image": "canadian-wanderlust.jpg",
+                "url": "https://www.canadianwanderlust.com"
+            }, {
+                "title": "Fury Fighting Gear",
+                "category": "(offline now) A fighting gear company I started",
+                "image": "fury-fighting-gear.jpg",
+                "url": "http://www.timbakerdev.com"
+            }, {
+                "title": "Original Thai Food",
+                "category": "Website I built for a restaurant I like in Thailand",
+                "image": "original-thai-food.jpg",
+                "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+            }, {
+                "title": "Resume Website",
+                "category": "A React based resume website template",
+                "image": "resume-website.jpg",
+                "url": "http://www.timbakerdev.com"
+            }, {
+                "title": "Smirkspace",
+                "category": "(MVP Only) A React and Meteor based chat University project.",
+                "image": "smirkspace.jpg",
+                "url": "http://www.smirkspace.com"
+            }
+        ]
+    },
+    "testimonials": {
+        "testimonials": [
+            {
+                "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+                "user": "Kareem Abdul Jabbar"
+            }, {
+                "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+                "user": "Steve Wozniak... impersonator"
+            }
+        ]
+    }
+}
