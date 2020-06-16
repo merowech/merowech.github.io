@@ -2,9 +2,9 @@
     "main": {
         "name": "Udo Schlegel",
         "occupation": "PhD Candidate & Research Associate",
-        "description": "I am interested in artificial intelligence and security, especially deep learning and cyber security, but also predictive policing and machine learning in general. My current research evolves around a visualized understanding of deep neural networks for time series",
+        "description": "I am interested in artificial intelligence and security, especially deep learning and cybersecurity, but also predictive policing and machine learning in general. My current research revolves around a visualized understanding of deep neural networks for time series.",
         "image": "udo-schlegel-k.jpg",
-        "bio": "Hi, I am Udo. ",
+        "bio": "Hi, I am Udo. I work as a research associate in visual analytics. However, my research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
         "email": "udo.m.schlegel@gmail.com",
         "phone": "",
@@ -61,17 +61,17 @@
                 "company": "Freelancer",
                 "title": "Machine Learning Consultant",
                 "years": "July 2018 - October 2018",
-                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+                "description": "During a short transition phase before my PhD position, I worked as a freelance machine learning consultant with Steinbeis and Siemens CT to develop a system for explainable AI on time series classification tasks."
             }, {
                 "company": "Steinbeis Kompetenzzentrum",
                 "title": "Student Research Assistant",
                 "years": "October 2017 - June 2018",
-                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+                "description": "To work primarily on industry projects, I worked for several months for Steinbeis in cooperation with the LKA NRW and Siemens CT. There I was part of a team working on predictive policing and predictive maintenance time series analysis."
             }, {
                 "company": "University of Konstanz",
                 "title": "Student Research Assistant",
                 "years": "March 2015 - June 2018",
-                "description": "During my time as a student research assistant I started with the maintenance and support of the web pages of the department and projects of Prof. Dr. Daniel Keim. However, I was eager to extend my knowledge about data analysis and project research, I was part of various projects ranging from energy network analysis to predictive policing to 3D point cloud analysis. Especially, the predicitve policing catched me and guided me to my master thesis about crime forecasting using deep learning."
+                "description": "During my time as a student research assistant, I started with the maintenance and support of the web pages of the department and projects of Prof. Dr. Daniel Keim. However, I was eager to extend my knowledge of data analysis and project research. I was part of various projects ranging from energy network analysis to predictive policing to 3D point cloud analysis. Notably, the predictive policing caught me and guided me to my master thesis about crime forecasting using deep learning."
             }
         ],
         "skills": [

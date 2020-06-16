@@ -93,7 +93,7 @@ export function Resume(props) {
                 </div>
             </div>
 
-            <div className="row skill">
+            {/* <div className="row skill">
 
                 <div className="three columns header-col">
                     <h1>
@@ -112,7 +112,7 @@ export function Resume(props) {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }
