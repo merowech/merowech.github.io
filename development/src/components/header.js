@@ -84,13 +84,10 @@ export function Header(props) {
                         <a className="smoothscroll" href="#resume">Resume</a>
                     </li>
                     <li>
-                        <a className="smoothscroll" href="#portfolio">Works</a>
+                        <a className="smoothscroll" href="#publications">Publications</a>
                     </li>
                     <li>
-                        <a className="smoothscroll" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#contact">Contact</a>
+                        <a className="smoothscroll" href="#about">Contact</a>
                     </li>
                 </ul>
 

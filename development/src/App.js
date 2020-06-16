@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/header';
 import { About } from './components/about';
 import { Resume } from './components/resume';
+import { Contact } from './components/contact';
+import { Publications } from './components/publications';
 
 import $ from 'jquery';
 
@@ -49,6 +51,10 @@ function App() {
         <Header data={data.resumeData.main}/>
         <About data={data.resumeData.main}/>
         <Resume data={data.resumeData.resume}/>
+
+        <Publications data={data.resumeData.contact}/>
+
+        <Contact data={data.resumeData.contact}/>
       </div>
     );
   }

@@ -4,7 +4,7 @@
         "occupation": "PhD Candidate & Research Associate",
         "description": "I am interested in artificial intelligence and security, especially deep learning and cyber security, but also predictive policing and machine learning in general. My current research evolves around a visualized understanding of deep neural networks for time series",
         "image": "udo-schlegel-k.jpg",
-        "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+        "bio": "Hi, I am Udo. ",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
         "email": "udo.m.schlegel@gmail.com",
         "phone": "",
@@ -56,7 +56,7 @@
                 "company": "University of Konstanz",
                 "title": "PhD Candidate & Research Associate",
                 "years": "October 2018 - Present",
-                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+                "description": "I was lucky to get an offer not many people get after their master. I could either go the industry and start a career as a data scientist or software engineer or I could stay at the university doing what I am interested in: machine learning, visual data analysis, and research."
             }, {
                 "company": "Freelancer",
                 "title": "Machine Learning Consultant",
@@ -71,7 +71,7 @@
                 "company": "University of Konstanz",
                 "title": "Student Research Assistant",
                 "years": "March 2015 - June 2018",
-                "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+                "description": "During my time as a student research assistant I started with the maintenance and support of the web pages of the department and projects of Prof. Dr. Daniel Keim. However, I was eager to extend my knowledge about data analysis and project research, I was part of various projects ranging from energy network analysis to predictive policing to 3D point cloud analysis. Especially, the predicitve policing catched me and guided me to my master thesis about crime forecasting using deep learning."
             }
         ],
         "skills": [
