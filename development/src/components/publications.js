@@ -40,15 +40,19 @@ export function Publications() {
         return (
             <div>Loading...</div>
         );
-    } else {
+    } else if (Object.keys(data).length === 0) {
+        return (
+            <div>Error: Blocked by Client</div>
+        );
+    } 
+    else {
         console.log(data);
 
-        var projects = Object.values(data
-            .data
-            .publications)
+        var projects = Object
+            .values(data.data.publications)
             .map(function (publication) {
                 console.log(publication);
-                
+
                 let publicationImage = 'https://bib.dbvis.de/static/images/thumb-default.png';
                 if (publication.thumb) {
                     publicationImage = 'https://bib.dbvis.de/static/uploadedFiles/thumbs/' + publication.thumb;

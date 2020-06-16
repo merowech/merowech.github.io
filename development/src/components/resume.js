@@ -41,23 +41,23 @@ export function Resume(props) {
             );
         });
 
-    const skills = props
-        .data
-        .skills
-        .map(function (skills) {
-            var className = 'bar-expand ' + skills
-                .name
-                .toLowerCase();
-            return (
-                <li key={skills.name}>
-                    <span
-                        style={{
-                        width: skills.level
-                    }}className={className}></span>
-                    <em>{skills.name}</em>
-                </li>
-            );
-        });
+    // const skills = props
+    //     .data
+    //     .skills
+    //     .map(function (skills) {
+    //         var className = 'bar-expand ' + skills
+    //             .name
+    //             .toLowerCase();
+    //         return (
+    //             <li key={skills.name}>
+    //                 <span
+    //                     style={{
+    //                     width: skills.level
+    //                 }}className={className}></span>
+    //                 <em>{skills.name}</em>
+    //             </li>
+    //         );
+    //     });
 
     useEffect(() => {}, []);
 
