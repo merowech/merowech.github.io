@@ -42,7 +42,7 @@ function App() {
     );
   } else if (!isLoaded) {
     return (
-      <div>Loading...</div>
+      <div class="center">Loading</div>
     );
   } else {
     console.log(data);

@@ -4,9 +4,9 @@
         "occupation": "PhD Candidate & Research Associate",
         "description": "I am interested in artificial intelligence and security, especially deep learning and cybersecurity, but also predictive policing and machine learning in general. My current research revolves around a visualized understanding of deep neural networks for time series.",
         "image": "udo-schlegel-k.jpg",
-        "bio": "Hi, I am Udo. I work as a research associate in visual analytics. However, my research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
+        "bio": "Hi, I am Udo. I work as a research associate in visual analytics. My research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-        "email": "udo.m.schlegel@gmail.com",
+        "email": "u.schlegel@uni-konstanz.de udo.m.schlegel@gmail.com",
         "phone": "",
         "address": {
             "street": "Universitätsstraße 10",
@@ -17,10 +17,6 @@
         "website": "http://www.schlegel.dbvis.de",
         "social": [
             {
-                "name": "twitter",
-                "url": "http://twitter.com/TheMerowech",
-                "className": "fa fa-twitter"
-            }, {
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/udo-schlegel",
                 "className": "fa fa-linkedin"
@@ -28,11 +24,14 @@
                 "name": "github",
                 "url": "http://github.com/merowech",
                 "className": "fa fa-github"
+            }, {
+                "name": "twitter",
+                "url": "http://twitter.com/TheMerowech",
+                "className": "fa fa-twitter"
             }
         ]
     },
     "resume": {
-        "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
         "education": [
             {
                 "school": "University of Konstanz",

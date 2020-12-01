@@ -3,11 +3,6 @@ import React, {useEffect} from 'react';
 import './resume.css';
 
 export function Resume(props) {
-
-   console.log(props);
-   
-
-    const skillmessage = props.data.skillmessage;
     
     const education = props
         .data
