@@ -1,20 +1,20 @@
 {
     "main": {
         "name": "Udo Schlegel",
-        "occupation": "PostDoc and researcher",
-        "description": "I am interested in artificial intelligence and security, especially deep learning and cybersecurity, but also predictive policing and machine learning in general. My current research revolves around a visualized understanding of deep neural networks (explainable AI) for time series data to enable explainbility and debugging of deep learning models.",
+        "occupation": "PhD Candidate & Research Associate",
+        "description": "I am interested in artificial intelligence and security, especially deep learning and cybersecurity, but also predictive policing and machine learning in general. My current research revolves around a visualized understanding of deep neural networks for time series.",
         "image": "udo-schlegel-k.jpg",
-        "bio": "Hi, I am Udo. I work as a PostDoc and researcher at the LMU Munich. My research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
+        "bio": "Hi, I am Udo. I work as a research associate in visual analytics. My research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-        "email": "udo.schlegel@lmu.de",
+        "email": "u.schlegel@uni-konstanz.de udo.m.schlegel@gmail.com",
         "phone": "",
         "address": {
-            "street": "Oettingenstraße 67",
-            "city": "Munich",
-            "state": "Bavaria",
-            "zip": "80538"
+            "street": "Universitätsstraße 10",
+            "city": "Konstanz",
+            "state": "Baden-Württemberg",
+            "zip": "78464"
         },
-        "website": "merowech.github.io",
+        "website": "http://www.schlegel.dbvis.de",
         "social": [
             {
                 "name": "linkedin",
@@ -31,47 +31,27 @@
         "education": [
             {
                 "school": "University of Konstanz",
-                "degree": "Dr. rer. nat., Computer Science",
-                "graduated": "December 2024",
+                "degree": "PhD Computer Science",
+                "graduated": "Currently enrolled",
                 "description": "Focus on explainable AI and visual explainable AI for time series"
             }, {
                 "school": "University of Konstanz",
-                "degree": "M.Sc., Computer and Information Science",
-                "graduated": "July 2018",
+                "degree": "Master, Computer and Information Science",
+                "graduated": "Juli 2018",
                 "description": "Focus on Machine Learning and especially Deep Learning"
             }, {
                 "school": "University of Konstanz",
-                "degree": "B.Sc., Information Engineering",
+                "degree": "Bachelor, Information Engineering",
                 "graduated": "October 2016",
                 "description": "Focus on Machine Learning and Visualization"
             }
         ],
         "work": [
             {
-                "company": "LMU Munich",
-                "title": "PostDoc",
-                "years": "March 2025 - Now",
-                "description": ""
-            }, {
-                "company": "Corpuls",
-                "title": "Data Scientist",
-                "years": "November 2024 - March 2025",
-                "description": ""
-            }, {
                 "company": "University of Konstanz",
                 "title": "PhD Candidate & Research Associate",
-                "years": "October 2018 - December 2024",
+                "years": "October 2018 - Present",
                 "description": "I was lucky to get an offer not many people get after their master. I could either go the industry and start a career as a data scientist or software engineer or I could stay at the university doing what I am interested in: machine learning, visual data analysis, and research."
-            }, {
-                "company": "Huawei Research Center Germany",
-                "title": "PhD Intern for AI",
-                "years": "November 2021 - April 2022",
-                "description": "Developed and deployed a state-of-the-art Graph Neural Network architecture for the Huawei Ascend platform, specializing in relational graphs, while also conducting research and implementing explainable AI techniques and evaluation methods for GNNs."
-            }, {
-                "company": "Steinbeis Kompetenzzentrum",
-                "title": "Data Scientist & Software Engineer",
-                "years": "April 2019 - September 2019",
-                "description": "Led and executed an explainable AI project for Time Series in collaboration with Siemens Corporate Technology and their clients, resulting in a published paper and Erfindungsmeldung for the research demonstrator."
             }, {
                 "company": "Freelancer",
                 "title": "Machine Learning Consultant",
