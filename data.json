@@ -1,10 +1,10 @@
 {
     "main": {
         "name": "Udo Schlegel",
-        "occupation": "PostDoc and researcher",
-        "description": "I am interested in artificial intelligence and security, especially deep learning and cybersecurity, but also predictive policing and machine learning in general. My current research revolves around a visualized understanding of deep neural networks (explainable AI) for time series data to enable explainbility and debugging of deep learning models.",
+        "occupation": "AI PostDoc researcher and AI freelance consultant",
+        "description": "I am interested in artificial intelligence, especially deep learning and explainable AI, and cyber security. My current research revolves around explainable AI for time series models either trained supervised (classification) or unsupervised (clustering) to reveal learned patterns and increase the transparency of AI models.",
         "image": "udo-schlegel-k.jpg",
-        "bio": "Hi, I am Udo. I work as a PostDoc and researcher at the LMU Munich. My research interest evolves around artificial intelligence and the unlimited possibilities it incorporates. Discussing the technical and ethical limitations around AI is another aspect I like. This includes what AI can learn from human behavior and how we could model human behavior using AI models.",
+        "bio": "Hi, I’m Udo. I’m a Postdoctoral researcher at Ludwig-Maximilians-Universität (LMU) Munich and the Munich Center for Machine Learning (MCML). I also work as a freelance consultant and am open to research and industry projects. My work focuses on artificial intelligence, particularly deep learning, explainable AI, and cybersecurity. I’m especially interested in making AI systems more transparent and understandable. My current research explores explainable methods for time series models in both supervised and unsupervised settings, aiming to uncover the patterns these models learn. Beyond the technical side, I enjoy thinking and talking about the ethical limits of AI and how human behavior can be responsibly modeled using AI.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
         "email": "udo.schlegel@lmu.de",
         "phone": "",
@@ -33,30 +33,30 @@
                 "school": "University of Konstanz",
                 "degree": "Dr. rer. nat., Computer Science",
                 "graduated": "December 2024",
-                "description": "Focus on explainable AI and visual explainable AI for time series"
+                "description": "Focus on explainable AI and visual explainable AI for time series with the title: 'Visual Explainable AI for Time Series Classification: The potential of attributions and counterfactuals'."
             }, {
                 "school": "University of Konstanz",
                 "degree": "M.Sc., Computer and Information Science",
                 "graduated": "July 2018",
-                "description": "Focus on Machine Learning and especially Deep Learning"
+                "description": "Focus on Machine Learning and especially Deep Learning with the title: 'Towards Crime Forecasting Using Deep Learning'"
             }, {
                 "school": "University of Konstanz",
                 "degree": "B.Sc., Information Engineering",
                 "graduated": "October 2016",
-                "description": "Focus on Machine Learning and Visualization"
+                "description": "Focus on Machine Learning and Visualization with the title: 'Interaktive Unterstützung für Malware: Klassifikation'"
             }
         ],
         "work": [
             {
-                "company": "LMU Munich",
+                "company": "LMU Munich / Munich Center for Machine Learning",
                 "title": "PostDoc",
                 "years": "March 2025 - Now",
-                "description": ""
+                "description": "I got the offer to continue my resarch as a PostDoc to further explore explainable AI for time series models and apply my research to real world problems in collaboration with industry partners. I further have the opportunity to supervise Bachelor / Master / and Phd students."
             }, {
                 "company": "Corpuls",
                 "title": "Data Scientist",
                 "years": "November 2024 - March 2025",
-                "description": ""
+                "description": "Developed machine learning models for medical time series data to support emergency medical services in decision making and patient monitoring."
             }, {
                 "company": "University of Konstanz",
                 "title": "PhD Candidate & Research Associate",
