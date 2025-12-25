@@ -9,6 +9,7 @@ COPY ./merowech package*.json ./
  
 # Install dependencies
 RUN npm install
+RUN npm install jquery
  
 # Copy the rest of your application files
 COPY ./merowech .

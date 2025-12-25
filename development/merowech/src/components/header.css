@@ -25,7 +25,7 @@ header .banner {
    padding: 10px;
    text-align: center;
    /* transform: translate(0px, 25vh); */
-   background: rgba(0, 0, 0, .3);
+   background: rgba(0, 0, 0, .5);
 }
 
 header .banner-text {
@@ -41,7 +41,7 @@ header .banner-text h1 {
 }
 
 header .banner-text h3 {
-   font: 18px/1.9em 'Raleway-thin', sans-serif;
+   font: 18px/1.9em 'Raleway', sans-serif;
    color: #eee;
    margin: 0 auto;
    width: 70%;
@@ -60,7 +60,7 @@ header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
    border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+   border-color: rgba(150, 150, 150, .8);
 }
 
 /* header social links */
