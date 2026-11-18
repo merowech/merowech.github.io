@@ -320,6 +320,56 @@ const PUBLICATIONS = [
     "bibtex": "@inproceedings{lan2025human,\n  title={Human Uncertainty-Aware Data Selection and Automatic Labeling in Visual Question Answering},\n  author={Lan, Jian and Liu, Zhicheng and Schlegel, Udo and Zhao, Raoyuan and Liu, Yihong and Sch{\\\"u}tze, Hinrich and Hedderich, Michael A and Seidl, Thomas},\n  booktitle={International Conference on Learning Representations (ICLR)},\n  year={2025}\n}"
   },
   {
+    "id": "fischer2025dinspec91517",
+    "citeKey": "fischer2025dinspec91517",
+    "type": "techreport",
+    "title": "Anforderungen an vertrauenswürdige KI-Methoden in polizeilichen Anwendungen (Requirements for trustworthy AI methods in police applications)",
+    "authors": [
+      "Maximilian T. Fischer",
+      "Udo Schlegel",
+      "Daniel A. Keim",
+      "S. Altmann",
+      "C. Grote",
+      "P. Reuter",
+      "G. Coleman",
+      "Michaela Geierhos",
+      "F. Maoro",
+      "M. Kluin",
+      "M. Weinbuch",
+      "Hartmut Aden",
+      "S. Kleemann",
+      "M. Tahraoui",
+      "A. Louban",
+      "M. Arndt",
+      "Sabrina Schönrock",
+      "L. T. Brandner",
+      "Simon David Hirsbrunner",
+      "Wulf Loh",
+      "Y. Yilmaz"
+    ],
+    "displayAuthors": [
+      "Maximilian T. Fischer",
+      "Udo Schlegel",
+      "Daniel A. Keim",
+      "et al."
+    ],
+    "venue": "DIN SPEC 91517:2025-05, DIN Media GmbH (DOI: 10.31030/3612025)",
+    "venueBadge": "DIN SPEC 91517",
+    "year": 2025,
+    "pages": "",
+    "selected": true,
+    "featured": true,
+    "categories": [
+      "Explainable AI"
+    ],
+    "arxiv": null,
+    "links": {
+      "din": "https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276",
+      "dbvis": "https://bib.dbvis.de/publications/view/1083"
+    },
+    "bibtex": "@techreport{fischer2025dinspec91517,\n  title={DIN SPEC 91517:2025-05 -- Anforderungen an vertrauensw{\\\"u}rdige KI-Methoden in polizeilichen Anwendungen (Requirements for trustworthy AI methods in police applications)},\n  author={Fischer, Maximilian T and Schlegel, Udo and Keim, Daniel A and Altmann, S and Grote, C and Reuter, P and Coleman, G and Geierhos, Michaela and Maoro, F and Kluin, M and Weinbuch, M and Aden, Hartmut and Kleemann, S and Tahraoui, M and Louban, A and Arndt, M and Sch{\\\"o}nrock, Sabrina and Brandner, L T and Hirsbrunner, Simon David and Loh, Wulf and Yilmaz, Y},\n  institution={DIN Deutsches Institut f{\\\"u}r Normung e. V. / DIN Media GmbH},\n  number={DIN SPEC 91517:2025-05},\n  doi={10.31030/3612025},\n  url={https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276},\n  year={2025}\n}"
+  },
+  {
     "id": "knab2025lime",
     "citeKey": "knab2025lime",
     "type": "inproceedings",
@@ -1753,7 +1803,7 @@ export function Publications() {
 
                 <div className="pub-main">
                   <div className="pub-authors-line">
-                    {pub.authors.map((author, idx) => (
+                    {(pub.displayAuthors || pub.authors).map((author, idx) => (
                       <React.Fragment key={idx}>
                         {idx > 0 && ', '}
                         {isSelfAuthor(author) ? (
@@ -1767,6 +1817,16 @@ export function Publications() {
                   <div className="pub-title-line">
                     <span className="pub-title-text">{pub.title}</span>
                     <span className="pub-row-actions no-print">
+                      {pub.links && pub.links.din && (
+                        <a href={pub.links.din} target="_blank" rel="noopener noreferrer">
+                          din-media
+                        </a>
+                      )}
+                      {pub.links && pub.links.dbvis && (
+                        <a href={pub.links.dbvis} target="_blank" rel="noopener noreferrer">
+                          dbvis
+                        </a>
+                      )}
                       {pub.arxiv && (
                         <a href={pub.arxiv} target="_blank" rel="noopener noreferrer">
                           arXiv

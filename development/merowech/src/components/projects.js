@@ -25,6 +25,22 @@ const PROJECTS = [
     ]
   },
   {
+    title: 'VIKING & DIN SPEC 91517',
+    role: '€3M+ R&D Consortium & Technical Standardization',
+    description:
+      'Coordinated 10 partners (incl. BSI, BKA, LKA NRW, Fraunhofer IDMT) on trustworthy AI and co-authored DIN SPEC 91517:2025-05 defining technical, ethical, and legal requirements for trustworthy AI methods.',
+    links: [
+      {
+        label: 'DIN SPEC 91517 (DIN Media)',
+        url: 'https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276'
+      },
+      {
+        label: 'DBVIS Publication',
+        url: 'https://bib.dbvis.de/publications/view/1083'
+      }
+    ]
+  },
+  {
     title: 'Open-Source Research & Code (@merowech)',
     role: 'Personal GitHub Repositories',
     description:

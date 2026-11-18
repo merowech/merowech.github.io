@@ -48,11 +48,12 @@ const WORK_EXPERIENCE = [
     chapterTitle: 'Choosing Research & Coordinating Trustworthy AI at Scale',
     story: [
       'Finishing my Master’s left me at a crossroads with an offer not many graduates get: start a classic industry career as a data scientist or software engineer, or stay at the university in Prof. Dr. Daniel Keim’s group doing exactly what fascinated me—machine learning, visual data analysis, and figuring out what deep neural networks actually learn.',
-      'Staying turned out to be transformative. Alongside writing my dissertation on attributions and counterfactuals for time series, open-sourcing interactive visual demonstrators, and teaching ten courses, I proposed, wrote, and coordinated VIKING—a €3M+ applied-AI consortium uniting ten partners (including BSI, BKA, LKA NRW, and Fraunhofer IDMT) around trustworthy, human-centered AI.'
+      'Staying turned out to be transformative. Alongside writing my dissertation on attributions and counterfactuals for time series, open-sourcing interactive visual demonstrators, and teaching ten courses, I proposed, wrote, and coordinated VIKING—a €3M+ applied-AI consortium uniting ten partners (including BSI, BKA, LKA NRW, and Fraunhofer IDMT) around trustworthy, human-centered AI, culminating in DIN SPEC 91517.'
     ],
-    milestone: '40+ publications · Scientific & technical coordinator of the €3M+, 10-partner VIKING project',
+    milestone:
+      '40+ publications · Coordinator of €3M+ VIKING consortium · Co-author of DIN SPEC 91517',
     bullets: [
-      'Proposed, wrote, and led the VIKING R&D project (€3M+) as scientific & technical coordinator, coordinating 10 partners including LKA NRW, BKA, BSI, and Fraunhofer IDMT to build trustworthy AI for law-enforcement investigations',
+      'Proposed, wrote, and led the VIKING R&D project (€3M+) as scientific & technical coordinator across 10 partners (incl. LKA NRW, BKA, BSI, Fraunhofer IDMT), co-authoring DIN SPEC 91517 on requirements for trustworthy AI methods',
       'Developed explainable-AI and visual-analytics methods for time-series and deep learning models; published 40+ papers and open-sourced research demonstrators on GitHub',
       'Taught 10 courses, presented at 12 conferences, and served as a panelist at 3 venues'
     ]
