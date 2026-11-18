@@ -1,12 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
 
-docker build -t development .
-docker run --rm -v $(pwd)/output:/app/build development sh -c "npx update-browserslist-db@latest && npm run build"
+cd "$(dirname "$0")"
 
-# Remove old files/directories (except .git, .gitignore, .gitattributes, and development)
-find .. -mindepth 1 -maxdepth 1 ! -name '.gitignore' ! -name '.gitattributes' ! -name 'development' ! -name '.git' -exec rm -rf {} +
+docker build -t merowech-site .
+docker run --rm -v "$(pwd)/output:/app/build" merowech-site npm run build
 
-# Copy new build files to parent directory
-cp -rf output/* ../.
+# Remove old root build files (keep .git, .gitignore, .gitattributes, and development)
+find .. -mindepth 1 -maxdepth 1 \
+  ! -name '.git' \
+  ! -name '.gitignore' \
+  ! -name '.gitattributes' \
+  ! -name 'development' \
+  -exec rm -rf {} +
 
-# Clean up output directory
+# Copy new build files (including hidden files like .nojekyll) to repository root
+cp -rf output/. ../.
+
+# Clean up temporary output directory
 rm -rf output

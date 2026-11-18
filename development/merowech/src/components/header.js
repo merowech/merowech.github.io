@@ -1,115 +1,191 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Icon } from './icons';
 
-import $ from 'jquery';
+const NAV_ITEMS = [
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#publications', label: 'Publications' },
+  { href: '#education', label: 'Education' }
+];
 
-import './header.css';
+const PROFILE_LINK_ROWS = [
+  [
+    {
+      label: 'udo@merowech-solutions.de',
+      url: 'mailto:udo@merowech-solutions.de',
+      icon: 'mail',
+      external: false
+    },
+    {
+      label: 'udo-schlegel',
+      url: 'https://www.linkedin.com/in/udo-schlegel/',
+      icon: 'linkedin',
+      external: true
+    },
+    {
+      label: 'Google Scholar',
+      url: 'https://scholar.google.com/citations?user=OmfaIuYAAAAJ',
+      icon: 'scholar',
+      external: true
+    }
+  ],
+  [
+    {
+      label: 'merowech',
+      url: 'https://github.com/merowech',
+      icon: 'github',
+      external: true
+    },
+    {
+      label: 'visual-xai-for-time-series',
+      url: 'https://github.com/visual-xai-for-time-series',
+      icon: 'code',
+      external: true
+    },
+    {
+      label: 'merowech-solutions.de',
+      url: 'https://merowech-solutions.de/',
+      icon: 'briefcase',
+      external: true
+    }
+  ]
+];
 
-export function Header(props) {
+export function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const navRef = useRef(null);
 
-    const name = props.data.name;
-    const occupation = props.data.occupation;
-    const description = props.data.description;
-    const city = props.data.address.city;
-    const networks = props
-        .data
-        .social
-        .map(function (network) {
-            return (
-                <li key={network.name}>
-                    <a href={network.url}>
-                        <i className={network.className}></i>
-                    </a>
-                </li>
-            )
+  useEffect(() => {
+    const navEl = navRef.current;
+    if (!navEl) return;
+
+    const supportsScrollTargetGroup =
+      typeof CSS !== 'undefined' &&
+      typeof CSS.supports === 'function' &&
+      CSS.supports('scroll-target-group: auto');
+
+    if (supportsScrollTargetGroup) {
+      const syncAriaCurrent = () => {
+        const currentLink = navEl.querySelector('a:target-current');
+        navEl.querySelectorAll('a.nav-link').forEach((link) => {
+          link.setAttribute('aria-current', link === currentLink ? 'true' : 'false');
         });
+      };
+      syncAriaCurrent();
+      document.addEventListener('scrollend', syncAriaCurrent);
+      return () => document.removeEventListener('scrollend', syncAriaCurrent);
+    }
 
-    useEffect(() => {
-        $('body')
-            .on('click', '.smoothscroll', function (e) {
-                e.preventDefault();
+    const navLinks = Array.from(navEl.querySelectorAll('a.nav-link'));
+    const sections = NAV_ITEMS.map((item) => document.querySelector(item.href)).filter(Boolean);
 
-                var target = this.hash,
-                    $target = $(target);
+    if (navLinks[0]) {
+      navLinks[0].classList.add('target-current');
+      navLinks[0].setAttribute('aria-current', 'true');
+    }
 
-                $('html, body')
-                    .stop()
-                    .animate({
-                        'scrollTop': $target
-                            .offset()
-                            .top
-                    }, 800, 'swing', function () {
-                        window.location.hash = target;
-                    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach((link) => {
+              const isActive = link.getAttribute('href') === `#${id}`;
+              link.classList.toggle('target-current', isActive);
+              link.setAttribute('aria-current', isActive ? 'true' : 'false');
             });
-
-        $(window).on('scroll', function () {
-
-            var h = $('header').height();
-            var y = $(window).scrollTop();
-            var nav = $('#nav-wrap');
-
-            if ((y > h * .20) && (y < h) && ($(window).outerWidth() > 768)) {
-                nav.fadeOut('fast');
-            } else {
-                if (y < h * .20) {
-                    nav
-                        .removeClass('opaque')
-                        .fadeIn('fast');
-                } else {
-                    nav
-                        .addClass('opaque')
-                        .fadeIn('fast');
-                }
-            }
-
+          }
         });
-    }, []);
+      },
+      { rootMargin: '-40% 0px -50% 0px', threshold: 0 }
+    );
 
-    return (
-        <header id="front">
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
-            <nav id="nav-wrap">
+  return (
+    <>
+      <header className="site-topbar no-print">
+        <div className="page-wrap topbar-inner">
+          <a href="#front" className="brand-link">
+            <span className="brand-thin">Udo</span> <strong className="brand-bold">Schlegel</strong>
+          </a>
 
-                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-                <a className="mobile-btn" href="#front" title="Hide navigation">Hide navigation</a>
+          <button
+            type="button"
+            className="mobile-menu-toggle"
+            aria-expanded={mobileOpen}
+            aria-controls="primary-nav-links"
+            onClick={() => setMobileOpen((prev) => !prev)}
+          >
+            <Icon name={mobileOpen ? 'close' : 'menu'} size={18} />
+            <span>Menu</span>
+          </button>
 
-                <ul id="nav" className="nav">
-                    <li className="current">
-                        <a className="smoothscroll" href="#front">Front</a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#publications">Publications</a>
-                    </li>
-                    <li>
-                        <a className="smoothscroll" href="#about">Contact</a>
-                    </li>
-                </ul>
+          <nav
+            ref={navRef}
+            id="primary-nav-links"
+            aria-label="Primary"
+            className={`primary-nav ${mobileOpen ? 'is-open' : ''}`}
+          >
+            {NAV_ITEMS.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="nav-link"
+                onClick={() => setMobileOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </header>
 
-            </nav>
-
-            <div className="row banner">
-                <div className="banner-text">
-                    <h1 className="responsive-headline">Hi, I'm {name}.</h1>
-                    <h3>I'm a {city} based <span>{occupation}</span>. {description}</h3>
-                    <hr/>
-                    <ul className="social">
-                        {networks}
-                    </ul>
-                </div>
-            </div>
-
-            <p className="scrolldown">
-                <a className="smoothscroll" href="#about">
-                    <i className="fa fa-chevron-circle-down"></i>
-                </a>
+      <div id="front" className="masthead page-wrap">
+        <div className="masthead-top">
+          <img
+            src="images/udo-schlegel-k.jpg"
+            alt="Dr. Udo Schlegel"
+            className="masthead-avatar"
+            fetchPriority="high"
+          />
+          <div className="masthead-identity">
+            <h1 className="masthead-name">
+              <span className="name-light">Udo</span>{' '}
+              <strong className="name-bold">Schlegel</strong>
+            </h1>
+            <p className="masthead-subtitle">
+              Senior Applied Scientist · Machine Learning &amp; Data Science
             </p>
+            <p className="masthead-location">
+              Munich, Germany · Dr. rer. nat. · PostDoc at LMU Munich &amp; MCML
+            </p>
+          </div>
+        </div>
 
-        </header>
-    )
+        <div className="masthead-link-groups" aria-label="Contact and profiles">
+          {PROFILE_LINK_ROWS.map((row, rowIdx) => (
+            <ul key={rowIdx} className="masthead-links">
+              {row.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.url}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                  >
+                    <Icon name={item.icon} size={14} />
+                    <span>{item.label}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }
