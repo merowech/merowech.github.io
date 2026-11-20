@@ -3,9 +3,9 @@ import React from 'react';
 const PROJECTS = [
   {
     title: 'Merowech Solutions',
-    role: 'Applied AI & Data Science Consulting · Founded 2026',
+    role: 'Applied AI & Data Science Consulting',
     description:
-      'Created in 2026 to formalize my independent AI and data science consulting—partnering with teams from initial feasibility and AI workshops to production ML pipelines.',
+      'Independent AI and data science consulting, partnering with teams from initial feasibility and AI workshops to production ML pipelines.',
     links: [
       { label: 'merowech-solutions.de', url: 'https://merowech-solutions.de/' },
       {
@@ -20,7 +20,10 @@ const PROJECTS = [
     description:
       'Libraries, evaluation metrics, and web demonstrators for time-series attributions, counterfactuals (ICFTS), and dense-pixel visualizations (DAVOTS).',
     links: [
-      { label: 'github.com/visual-xai-for-time-series', url: 'https://github.com/visual-xai-for-time-series' },
+      {
+        label: 'github.com/visual-xai-for-time-series',
+        url: 'https://github.com/visual-xai-for-time-series'
+      },
       { label: 'time-series-xai.dbvis.de', url: 'https://time-series-xai.dbvis.de/' }
     ]
   },
@@ -31,12 +34,20 @@ const PROJECTS = [
       'Coordinated 10 partners (incl. BSI, BKA, LKA NRW, Fraunhofer IDMT) on trustworthy AI and co-authored DIN SPEC 91517:2025-05 defining technical, ethical, and legal requirements for trustworthy AI methods.',
     links: [
       {
-        label: 'DIN SPEC 91517 (DIN Media)',
-        url: 'https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276'
+        label: 'DIN Project',
+        url: 'https://www.din.de/en/innovation-and-research/research-projects/research-projects-digitalization-and-ai/viking'
       },
       {
-        label: 'DBVIS Publication',
-        url: 'https://bib.dbvis.de/publications/view/1083'
+        label: 'Project Brief (PDF)',
+        url: 'https://www.sifo.de/sifo/shareddocs/Downloads/files/projektumriss_viking.pdf?__blob=publicationFile&v=4'
+      },
+      {
+        label: 'Talk Slides (PDF)',
+        url: 'https://www.sifo.de/sifo/shareddocs/Downloads/ppts-EuropKongr-2023/Hr._Schlegel_VIKING.pdf?__blob=publicationFile&v=2'
+      },
+      {
+        label: 'DIN SPEC 91517',
+        url: 'https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276'
       }
     ]
   },

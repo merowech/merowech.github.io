@@ -57,7 +57,9 @@ const PUBLICATIONS = [
       "Vision & Multimodal"
     ],
     "arxiv": null,
-    "links": {},
+    "links": {
+      "code": "https://github.com/lmu-dbs/cross-modal-pseudo-labeling-pipeline"
+    },
     "bibtex": "@inproceedings{schlegel2026vision,\n  title={Vision--Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting},\n  author={Schlegel, Udo and Shubhangi and Dax, Gabriel and Kaminwar, Sai Rahul and Karl, Florian and Seidl, Thomas},\n  booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},\n  pages={143--161},\n  year={2026},\n  organization={Springer Nature Switzerland, Cham}\n}"
   },
   {
@@ -104,7 +106,9 @@ const PUBLICATIONS = [
       "Vision & Multimodal"
     ],
     "arxiv": null,
-    "links": {},
+    "links": {
+      "code": "https://github.com/merowech/exploring-clip-robustness-against-paraphrases"
+    },
     "bibtex": "@inproceedings{schlegel2026prsm,\n  title={PRSM: A Measure to Evaluate CLIP’s Robustness Against Paraphrases},\n  author={Schlegel, Udo and Weeber, Franziska and Lan, Jian and Seidl, Thomas},\n  booktitle={International Conference on Multimedia Modeling (MMM)},\n  year={2026},\n  organization={Springer Nature Singapore}\n}"
   },
   {
@@ -364,8 +368,7 @@ const PUBLICATIONS = [
     ],
     "arxiv": null,
     "links": {
-      "din": "https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276",
-      "dbvis": "https://bib.dbvis.de/publications/view/1083"
+      "din": "https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276"
     },
     "bibtex": "@techreport{fischer2025dinspec91517,\n  title={DIN SPEC 91517:2025-05 -- Anforderungen an vertrauensw{\\\"u}rdige KI-Methoden in polizeilichen Anwendungen (Requirements for trustworthy AI methods in police applications)},\n  author={Fischer, Maximilian T and Schlegel, Udo and Keim, Daniel A and Altmann, S and Grote, C and Reuter, P and Coleman, G and Geierhos, Michaela and Maoro, F and Kluin, M and Weinbuch, M and Aden, Hartmut and Kleemann, S and Tahraoui, M and Louban, A and Arndt, M and Sch{\\\"o}nrock, Sabrina and Brandner, L T and Hirsbrunner, Simon David and Loh, Wulf and Yilmaz, Y},\n  institution={DIN Deutsches Institut f{\\\"u}r Normung e. V. / DIN Media GmbH},\n  number={DIN SPEC 91517:2025-05},\n  doi={10.31030/3612025},\n  url={https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276},\n  year={2025}\n}"
   },
@@ -1815,16 +1818,22 @@ export function Publications() {
                     ))}
                   </div>
                   <div className="pub-title-line">
-                    <span className="pub-title-text">{pub.title}</span>
+                    {pub.links && pub.links.din ? (
+                      <a
+                        href={pub.links.din}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pub-title-text pub-title-link"
+                      >
+                        {pub.title}
+                      </a>
+                    ) : (
+                      <span className="pub-title-text">{pub.title}</span>
+                    )}
                     <span className="pub-row-actions no-print">
                       {pub.links && pub.links.din && (
                         <a href={pub.links.din} target="_blank" rel="noopener noreferrer">
-                          din-media
-                        </a>
-                      )}
-                      {pub.links && pub.links.dbvis && (
-                        <a href={pub.links.dbvis} target="_blank" rel="noopener noreferrer">
-                          dbvis
+                          din
                         </a>
                       )}
                       {pub.arxiv && (
@@ -1842,9 +1851,11 @@ export function Publications() {
                           code
                         </a>
                       )}
-                      <a href={scholarUrl} target="_blank" rel="noopener noreferrer">
-                        scholar
-                      </a>
+                      {!(pub.links && pub.links.din) && (
+                        <a href={scholarUrl} target="_blank" rel="noopener noreferrer">
+                          scholar
+                        </a>
+                      )}
                       <button
                         type="button"
                         className="pub-bibtex-trigger"

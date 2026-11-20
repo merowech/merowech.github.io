@@ -10,13 +10,50 @@ const WORK_EXPERIENCE = [
     years: 'Mar. 2025 – Present',
     chapterTitle: 'Broadening the Horizon & Mentoring the Next Generation',
     story: [
-      'After a stint shipping production ML in medical technology, I received the offer to return to academia as a PostDoc at LMU Munich and MCML. What drew me back was the chance to combine open-ended fundamental research with direct industry transfer—expanding my focus from time-series explainability into vision-language models, foundation-model robustness, and concept-level explanations.',
-      'Today I mentor a team of five PhD researchers, supervise Bachelor and Master theses, and teach four graduate-level courses, while taking new ideas—like VLM-guided segmentation for waste sorting and paraphrase robustness for CLIP—all the way from mathematical formulation to working prototypes.'
+      'After shipping production ML in medical technology, I received the offer to return to academia as a PostDoc at LMU Munich and MCML. What drew me back was the chance to combine open-ended fundamental research with direct industry transfer, expanding my focus from time-series explainability into vision-language models, foundation-model robustness, and concept-level explanations.',
+      <>
+        Today I mentor a team of five PhD researchers, supervise Bachelor and Master theses, and
+        teach four graduate-level courses, while taking new ideas, such as{' '}
+        <a
+          href="https://github.com/lmu-dbs/cross-modal-pseudo-labeling-pipeline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VLM-guided segmentation for waste sorting
+        </a>{' '}
+        and{' '}
+        <a
+          href="https://github.com/merowech/exploring-clip-robustness-against-paraphrases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          paraphrase robustness for CLIP
+        </a>
+        , from initial formulation to working prototypes.
+      </>
     ],
     milestone: 'Mentoring 5 PhD researchers · 13 co-authored papers & 4 graduate courses since 2025',
     bullets: [
       'Lead applied ML research on vision-language models, foundation-model robustness, and explainable AI; manage and mentor a team of 5 PhD researchers and supervise B.Sc. / M.Sc. theses',
-      'Take new methods from idea to evaluated prototype, e.g., VLM-guided pseudo-labeling for semantic segmentation in waste sorting (ECML PKDD) and PRSM, a robustness measure for CLIP (MMM)',
+      <>
+        Take new methods from idea to evaluated prototype, e.g.,{' '}
+        <a
+          href="https://github.com/lmu-dbs/cross-modal-pseudo-labeling-pipeline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VLM-guided pseudo-labeling for semantic segmentation in waste sorting
+        </a>{' '}
+        (ECML PKDD) and{' '}
+        <a
+          href="https://github.com/merowech/exploring-clip-robustness-against-paraphrases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PRSM, a robustness measure for CLIP
+        </a>{' '}
+        (MMM)
+      </>,
       'Transfer research into industry collaborations (e.g., Corpuls); co-authored 13 papers and teach 4 graduate-level courses'
     ]
   },
@@ -47,21 +84,128 @@ const WORK_EXPERIENCE = [
     years: 'Oct. 2018 – Sep. 2024',
     chapterTitle: 'Choosing Research & Coordinating Trustworthy AI at Scale',
     story: [
-      'Finishing my Master’s left me at a crossroads with an offer not many graduates get: start a classic industry career as a data scientist or software engineer, or stay at the university in Prof. Dr. Daniel Keim’s group doing exactly what fascinated me—machine learning, visual data analysis, and figuring out what deep neural networks actually learn.',
-      'Staying turned out to be transformative. Alongside writing my dissertation on attributions and counterfactuals for time series, open-sourcing interactive visual demonstrators, and teaching ten courses, I proposed, wrote, and coordinated VIKING—a €3M+ applied-AI consortium uniting ten partners (including BSI, BKA, LKA NRW, and Fraunhofer IDMT) around trustworthy, human-centered AI, culminating in DIN SPEC 91517.'
+      'Finishing my Master’s left me at a crossroads with an offer not many graduates get: start a classic industry career as a data scientist or software engineer, or stay at the university in Prof. Dr. Daniel Keim’s group doing what fascinated me most: machine learning, visual data analysis, and figuring out what deep neural networks actually learn.',
+      <>
+        Staying turned out to be transformative. Alongside writing my dissertation on attributions
+        and counterfactuals for time series, open-sourcing{' '}
+        <a
+          href="https://github.com/visual-xai-for-time-series"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          interactive visual demonstrators
+        </a>
+        , and teaching ten courses, I proposed, wrote, and coordinated{' '}
+        <a
+          href="https://www.din.de/en/innovation-and-research/research-projects/research-projects-digitalization-and-ai/viking"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VIKING
+        </a>
+        , a €3M+ applied-AI consortium uniting ten partners (including BSI, BKA, LKA NRW, and
+        Fraunhofer IDMT;{' '}
+        <a
+          href="https://www.sifo.de/sifo/shareddocs/Downloads/files/projektumriss_viking.pdf?__blob=publicationFile&v=4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          project brief
+        </a>
+        ,{' '}
+        <a
+          href="https://www.sifo.de/sifo/shareddocs/Downloads/ppts-EuropKongr-2023/Hr._Schlegel_VIKING.pdf?__blob=publicationFile&v=2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          talk slides
+        </a>
+        ) around trustworthy, human-centered AI, culminating in{' '}
+        <a
+          href="https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DIN SPEC 91517
+        </a>
+        .
+      </>
     ],
-    milestone:
-      '40+ publications · Coordinator of €3M+ VIKING consortium · Co-author of DIN SPEC 91517',
+    milestone: (
+      <>
+        40+ publications · Coordinator of €3M+{' '}
+        <a
+          href="https://www.din.de/en/innovation-and-research/research-projects/research-projects-digitalization-and-ai/viking"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VIKING consortium
+        </a>{' '}
+        · Co-author of{' '}
+        <a
+          href="https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DIN SPEC 91517
+        </a>
+      </>
+    ),
     bullets: [
-      'Proposed, wrote, and led the VIKING R&D project (€3M+) as scientific & technical coordinator across 10 partners (incl. LKA NRW, BKA, BSI, Fraunhofer IDMT), co-authoring DIN SPEC 91517 on requirements for trustworthy AI methods',
-      'Developed explainable-AI and visual-analytics methods for time-series and deep learning models; published 40+ papers and open-sourced research demonstrators on GitHub',
+      <>
+        Proposed, wrote, and led the{' '}
+        <a
+          href="https://www.din.de/en/innovation-and-research/research-projects/research-projects-digitalization-and-ai/viking"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VIKING R&amp;D project
+        </a>{' '}
+        (€3M+;{' '}
+        <a
+          href="https://www.sifo.de/sifo/shareddocs/Downloads/files/projektumriss_viking.pdf?__blob=publicationFile&v=4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          project brief
+        </a>
+        ,{' '}
+        <a
+          href="https://www.sifo.de/sifo/shareddocs/Downloads/ppts-EuropKongr-2023/Hr._Schlegel_VIKING.pdf?__blob=publicationFile&v=2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          talk slides
+        </a>
+        ) as scientific &amp; technical coordinator across 10 partners (incl. LKA NRW, BKA, BSI,
+        Fraunhofer IDMT), co-authoring{' '}
+        <a
+          href="https://www.dinmedia.de/de/technische-regel/din-spec-91517/390603276"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DIN SPEC 91517
+        </a>{' '}
+        on requirements for trustworthy AI methods
+      </>,
+      <>
+        Developed explainable-AI and visual-analytics methods for time-series and deep learning
+        models; published 40+ papers and open-sourced{' '}
+        <a
+          href="https://github.com/visual-xai-for-time-series"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          research demonstrators on GitHub
+        </a>
+      </>,
       'Taught 10 courses, presented at 12 conferences, and served as a panelist at 3 venues'
     ]
   },
   {
     id: 'freelance',
     order: 2,
-    company: 'Freelancer (Merowech Solutions since 2026)',
+    company: 'Freelancer',
     companyUrl: 'https://merowech-solutions.de/',
     location: 'Konstanz & Munich, Germany',
     title: 'Machine Learning & Data Science Consultant',
@@ -69,9 +213,9 @@ const WORK_EXPERIENCE = [
     chapterTitle: 'A Continuous Bridge to Industry Problems',
     story: [
       'During the short summer transition before starting my PhD in 2018, I took on my first freelance engagement with Steinbeis and Siemens Corporate Technology to build an explainable time-series classification prototype. Enjoying the fast feedback loop of industrial engineering so much, I continued freelancing alongside my research.',
-      'Over the years, this independent freelance work served as my pragmatic counterweight to academia—building a 100-events/sec Kafka anomaly-detection pipeline for Körber Parcel Logistics, designing multimodal inquiry pricing for EBZ Group, and running hands-on AI workshops for teams like Vetter Pharma. In 2026, I bundled and formalized my consulting activities by creating Merowech Solutions.'
+      'Over the years, this independent freelance work served as a pragmatic counterweight to academia, including a 100-events/sec Kafka anomaly-detection pipeline for Körber Parcel Logistics, multimodal inquiry pricing for EBZ Group, and hands-on AI workshops for teams like Vetter Pharma.'
     ],
-    milestone: 'Independent ML freelancing since 2018 · Founded Merowech Solutions in 2026',
+    milestone: 'Independent ML & Data Science consulting across logistics, manufacturing & pharma',
     bullets: [
       'Built a Kafka data-streaming pipeline for anomaly detection for Körber Parcel Logistics, handling 100 events per second',
       'Built a proof-of-concept multimodal database for EBZ Group that automated cost calculation on new inquiries through fast comparison of historical and new prices',
@@ -88,7 +232,7 @@ const WORK_EXPERIENCE = [
     chapterTitle: 'Graph Neural Networks & Hardware-Scale AI',
     story: [
       'Halfway through my doctorate, I stepped into industrial AI systems research in Munich to experience how frontier architectures are adapted for dedicated AI accelerators.',
-      'I ported a state-of-the-art relational Graph Neural Network architecture to Huawei’s Ascend platform in MindSpore and TensorFlow—contributing it upstream to the open-source Ascend ModelZoo—while investigating how attribution and evaluation techniques behave on relational graphs.'
+      'I ported a state-of-the-art relational Graph Neural Network architecture to Huawei’s Ascend platform in MindSpore and TensorFlow, contributing it upstream to the open-source Ascend ModelZoo, while investigating how attribution and evaluation techniques behave on relational graphs.'
     ],
     milestone: 'Open-source Ascend ModelZoo contribution & internal GNN explainability paper',
     bullets: [
@@ -105,8 +249,8 @@ const WORK_EXPERIENCE = [
     years: 'Mar. 2015 – Sep. 2019',
     chapterTitle: 'Where It Started: From Department Web Pages to Deep Learning',
     story: [
-      'My path into research began modestly in 2015, maintaining websites for Prof. Dr. Daniel Keim’s chair at the University of Konstanz. Curious about what happened behind the scenes of the group’s projects, I kept asking to help with data analysis and visualization—soon writing full-stack web and Unity VR tools for 3D point clouds (VICTORIA, FLORIDA) and analyzing energy networks.',
-      'Working through Steinbeis with LKA NRW on spatiotemporal predictive policing (SKALA) hooked me on deep learning and directly inspired my Master’s thesis on crime forecasting. Shortly after, leading an industrial time-series XAI project with Siemens CT resulted in both a paper and an invention disclosure—setting the exact theme for my PhD.'
+      'My path into research began modestly in 2015, maintaining websites for Prof. Dr. Daniel Keim’s chair at the University of Konstanz. Curious about what happened behind the scenes of the group’s projects, I kept asking to help with data analysis and visualization, soon writing full-stack web and Unity VR tools for 3D point clouds (VICTORIA, FLORIDA) and analyzing energy networks.',
+      'Working through Steinbeis with LKA NRW on spatiotemporal predictive policing (SKALA) hooked me on deep learning and directly inspired my Master’s thesis on crime forecasting. Shortly after, leading an industrial time-series XAI project with Siemens CT resulted in both a paper and an invention disclosure, setting the theme for my PhD.'
     ],
     milestone: 'Published time-series XAI paper & Siemens invention disclosure (Erfindungsmeldung)',
     bullets: [
@@ -271,7 +415,7 @@ export function ExperienceSection() {
                 <h3 className="story-chapter-title">{job.chapterTitle}</h3>
 
                 <p className="story-role-line">
-                  {job.title} —{' '}
+                  {job.title} ·{' '}
                   {job.companyUrl ? (
                     <a href={job.companyUrl} target="_blank" rel="noopener noreferrer">
                       {job.company}

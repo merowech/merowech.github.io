@@ -2,7 +2,7 @@ services:
   development:
     build: .
     ports:
-      - "3000:3000"
+      - "8089:3000"
     volumes:
       - ./merowech:/app
       - /app/node_modules
