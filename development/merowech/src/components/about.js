@@ -16,19 +16,19 @@ export function About() {
         </a>{' '}
         and am open to research and industry projects. My work focuses on artificial intelligence,
         particularly deep learning, vision-language models, explainable AI, and cybersecurity. I’m
-        especially interested in making AI systems more transparent and understandable, exploring
-        explainable methods for time-series and foundation models in both supervised and
+        especially interested in making AI systems more <em>transparent and understandable</em>,
+        exploring explainable methods for time-series and foundation models in both supervised and
         unsupervised settings to uncover the patterns these models learn. Beyond the technical side,
-        I enjoy thinking and talking about the ethical limits of AI and how human behavior can be
-        responsibly modeled using AI.
+        I enjoy thinking and talking about the <em>ethical limits of AI</em> and how human behavior
+        can be responsibly modeled using AI.
       </p>
 
       <p className="summary-text">
         Over 9+ years of taking machine learning from research idea to working system, I have
-        combined 40+ peer-reviewed papers (incl. NeurIPS, ICLR, ECML PKDD, TMLR) with 10+ years of
-        full-stack development in Python and JavaScript, leading a €3M+, 10-partner applied-AI
-        R&amp;D project from proposal to delivery and shipping production models with industry
-        partners such as Siemens, Huawei, and Corpuls.
+        combined 40+ peer-reviewed papers (incl. <em>NeurIPS, ICLR, ECML PKDD, TMLR</em>) with 10+
+        years of full-stack development in Python and JavaScript, leading a €3M+, 10-partner
+        applied-AI R&amp;D project from proposal to delivery and shipping production models with
+        industry partners such as Siemens, Huawei, and Corpuls.
       </p>
     </section>
   );

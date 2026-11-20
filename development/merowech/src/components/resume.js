@@ -10,7 +10,13 @@ const WORK_EXPERIENCE = [
     years: 'Mar. 2025 – Present',
     chapterTitle: 'Broadening the Horizon & Mentoring the Next Generation',
     story: [
-      'After shipping production ML in medical technology, I received the offer to return to academia as a PostDoc at LMU Munich and MCML. What drew me back was the chance to combine open-ended fundamental research with direct industry transfer, expanding my focus from time-series explainability into vision-language models, foundation-model robustness, and concept-level explanations.',
+      <>
+        After shipping production ML in medical technology, I received the offer to return to
+        academia as a PostDoc at LMU Munich and MCML. What drew me back was the chance to combine{' '}
+        <em>open-ended fundamental research with direct industry transfer</em>, expanding my focus
+        from time-series explainability into vision-language models, foundation-model robustness,
+        and concept-level explanations.
+      </>,
       <>
         Today I mentor a team of five PhD researchers, supervise Bachelor and Master theses, and
         teach four graduate-level courses, while taking new ideas, such as{' '}
@@ -84,7 +90,12 @@ const WORK_EXPERIENCE = [
     years: 'Oct. 2018 – Sep. 2024',
     chapterTitle: 'Choosing Research & Coordinating Trustworthy AI at Scale',
     story: [
-      'Finishing my Master’s left me at a crossroads with an offer not many graduates get: start a classic industry career as a data scientist or software engineer, or stay at the university in Prof. Dr. Daniel Keim’s group doing what fascinated me most: machine learning, visual data analysis, and figuring out what deep neural networks actually learn.',
+      <>
+        Finishing my Master’s left me at a crossroads with an offer not many graduates get: start a
+        classic industry career as a data scientist or software engineer, or stay at the university
+        in Prof. Dr. Daniel Keim’s group doing what fascinated me most: machine learning, visual
+        data analysis, and figuring out <em>what deep neural networks actually learn</em>.
+      </>,
       <>
         Staying turned out to be transformative. Alongside writing my dissertation on attributions
         and counterfactuals for time series, open-sourcing{' '}
@@ -190,7 +201,7 @@ const WORK_EXPERIENCE = [
       </>,
       <>
         Developed explainable-AI and visual-analytics methods for time-series and deep learning
-        models; published 40+ papers and open-sourced{' '}
+        models; published <em>40+ papers</em> and open-sourced{' '}
         <a
           href="https://github.com/visual-xai-for-time-series"
           target="_blank"
@@ -217,7 +228,10 @@ const WORK_EXPERIENCE = [
     ],
     milestone: 'Independent ML & Data Science consulting across logistics, manufacturing & pharma',
     bullets: [
-      'Built a Kafka data-streaming pipeline for anomaly detection for Körber Parcel Logistics, handling 100 events per second',
+      <>
+        Built a Kafka data-streaming pipeline for anomaly detection for Körber Parcel Logistics,
+        handling <em>100 events per second</em>
+      </>,
       'Built a proof-of-concept multimodal database for EBZ Group that automated cost calculation on new inquiries through fast comparison of historical and new prices',
       'Built a proof-of-concept explaining time-series classification models on Siemens Corporate Technology’s data; ran an AI workshop for Vetter Pharma’s controlling team'
     ]
@@ -254,7 +268,11 @@ const WORK_EXPERIENCE = [
     ],
     milestone: 'Published time-series XAI paper & Siemens invention disclosure (Erfindungsmeldung)',
     bullets: [
-      'Led an explainable-AI project for time series with Siemens Corporate Technology and its clients (2019), resulting in a paper and an invention disclosure (Erfindungsmeldung)',
+      <>
+        Led an explainable-AI project for time series with Siemens Corporate Technology and its
+        clients (2019), resulting in a paper and an invention disclosure (<em>Erfindungsmeldung</em>
+        )
+      </>,
       'Built crime-forecasting clustering models in Python on spatio-temporal data for SKALA, a predictive-policing project with LKA NRW, and proposed an end-to-end deep learning approach to improve prediction quality',
       'Built full-stack web and Unity (VR) applications for the VICTORIA (EU Horizon 2020) and FLORIDA (BMBF) point-cloud visualization projects'
     ]
