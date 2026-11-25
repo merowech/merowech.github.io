@@ -370,6 +370,17 @@
   border: 1.5px solid var(--accent);
 }
 
+.story-node-side {
+  border-color: var(--muted);
+}
+
+.story-tag {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
 .story-meta-line {
   display: flex;
   flex-wrap: wrap;
@@ -548,6 +559,68 @@
 .mono-link {
   font-family: var(--font-mono);
   font-size: 0.84em;
+}
+
+/* Education Thesis Details View */
+.thesis-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.thesis-entry {
+  padding-inline-start: 1rem;
+  border-inline-start: 2px solid var(--rule-strong);
+}
+
+.thesis-kind {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-muted);
+}
+
+.thesis-detail-title {
+  font-size: 1.04rem;
+  font-weight: 700;
+  margin-block: 0.2rem 0.35rem;
+}
+
+.thesis-detail-title a {
+  color: var(--ink);
+  text-decoration-color: #9e9e9e;
+}
+
+.thesis-detail-title a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.thesis-original-title {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin-block-end: 0.45rem;
+}
+
+.thesis-summary {
+  font-size: 0.94rem;
+  line-height: 1.58;
+  color: var(--text);
+  margin-block-end: 0.5rem;
+}
+
+.thesis-links {
+  margin-block-start: 0.55rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.thesis-links a {
+  color: var(--muted);
+}
+
+.thesis-links a:hover {
+  color: var(--accent);
 }
 
 /* Skills & Languages Table */

@@ -48,7 +48,7 @@ const PUBLICATIONS = [
       "Thomas Seidl"
     ],
     "venue": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
-    "venueBadge": "ECML PKDD",
+    "venueBadge": "ECML-PKDD",
     "year": 2026,
     "pages": "143–161",
     "selected": true,
@@ -485,7 +485,7 @@ const PUBLICATIONS = [
       "Thomas Seidl"
     ],
     "venue": "ECML-PKDD Workshop for Explainable AI in Time Series and Data Streams (TempXAI)",
-    "venueBadge": "ECML PKDD TempXAI",
+    "venueBadge": "ECML-PKDD TempXAI",
     "year": 2025,
     "pages": "",
     "selected": false,
@@ -592,10 +592,11 @@ const PUBLICATIONS = [
     ],
     "arxiv": null,
     "links": {
+      "kops": "https://kops.uni-konstanz.de/entities/publication/4e108aaf-2cf9-4cfb-bc98-2730b512880b",
       "project": "https://time-series-xai.dbvis.de/",
       "code": "https://github.com/visual-xai-for-time-series"
     },
-    "bibtex": "@article{schlegel2024visual,\n  title={Visual Explainable AI for Time Series: The Potential of Attributions and Counterfactuals},\n  author={Schlegel, Udo},\n  journal={PhD Thesis},\n  year={2024}\n}"
+    "bibtex": "@phdthesis{schlegel2024visual,\n  title={Visual Explainable AI for Time Series: The Potential of Attributions and Counterfactuals},\n  author={Schlegel, Udo},\n  school={University of Konstanz},\n  url={https://kops.uni-konstanz.de/entities/publication/4e108aaf-2cf9-4cfb-bc98-2730b512880b},\n  year={2024}\n}"
   },
   {
     "id": "schlegel2024finding",
@@ -608,7 +609,7 @@ const PUBLICATIONS = [
       "Tobias Sutter"
     ],
     "venue": "ECML-PKDD Workshop for Explainable AI in Time Series and Data Streams (TempXAI)",
-    "venueBadge": "ECML PKDD TempXAI",
+    "venueBadge": "ECML-PKDD TempXAI",
     "year": 2024,
     "pages": "",
     "selected": false,
@@ -658,8 +659,8 @@ const PUBLICATIONS = [
       "Julius Rauscher",
       "Daniel A. Keim"
     ],
-    "venue": "ECML PKDD International Workshop on eXplainable Knowledge Discovery in Data Mining",
-    "venueBadge": "ECML PKDD XKDD",
+    "venue": "ECML-PKDD International Workshop on eXplainable Knowledge Discovery in Data Mining",
+    "venueBadge": "ECML-PKDD XKDD",
     "year": 2024,
     "pages": "",
     "selected": false,
@@ -787,7 +788,7 @@ const PUBLICATIONS = [
       "Daniel A. Keim"
     ],
     "venue": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
-    "venueBadge": "ECML PKDD",
+    "venueBadge": "ECML-PKDD",
     "year": 2023,
     "pages": "3–18",
     "selected": false,
@@ -1083,7 +1084,7 @@ const PUBLICATIONS = [
       "Daniel Seebacher"
     ],
     "venue": "Joint european conference on machine learning and knowledge discovery in databases",
-    "venueBadge": "ECML PKDD",
+    "venueBadge": "ECML-PKDD",
     "year": 2021,
     "pages": "",
     "selected": false,
@@ -1092,7 +1093,9 @@ const PUBLICATIONS = [
       "Time Series"
     ],
     "arxiv": null,
-    "links": {},
+    "links": {
+      "code": "https://github.com/dbvis-ukon/ts-mule/"
+    },
     "bibtex": "@inproceedings{schlegel2021ts,\n  title={Ts-mule: Local interpretable model-agnostic explanations for time series forecast models},\n  author={Schlegel, Udo and Vo, Duy Lam and Keim, Daniel A and Seebacher, Daniel},\n  booktitle={Joint european conference on machine learning and knowledge discovery in databases},\n  year={2021},\n  organization={Springer International Publishing}\n}"
   },
   {
@@ -1634,8 +1637,10 @@ const PUBLICATIONS = [
       "Theses"
     ],
     "arxiv": null,
-    "links": {},
-    "bibtex": "@phdthesis{schlegel2018towards,\n  title={Towards Crime Forecasting Using Deep Learning},\n  author={Schlegel, Udo},\n  year={2018},\n  school={Master Thesis, University of Konstanz}\n}"
+    "links": {
+      "kops": "https://kops.uni-konstanz.de/entities/publication/dffabcfe-c719-454c-9b9b-a9190e91be92"
+    },
+    "bibtex": "@mastersthesis{schlegel2018towards,\n  title={Towards Crime Forecasting Using Deep Learning},\n  author={Schlegel, Udo},\n  year={2018},\n  school={University of Konstanz},\n  url={https://kops.uni-konstanz.de/entities/publication/dffabcfe-c719-454c-9b9b-a9190e91be92}\n}"
   },
   {
     "id": "streeb2017uncovering",
@@ -1663,6 +1668,30 @@ const PUBLICATIONS = [
     "arxiv": null,
     "links": {},
     "bibtex": "@inproceedings{streeb2017uncovering,\n  title={Uncovering the Mistford Toxic Conspiracy},\n  author={Streeb, Dirk and Buchmuller, Juri and Schlegel, Udo and Jentner, Wolfgang and Behrisch, Michael and Schneider, Bruno and Seebacher, Daniel},\n  booktitle={IEEE Conference on Visual Analytics Science and Technology (VAST Challenge)},\n  pages={243--244},\n  year={2017},\n  organization={IEEE}\n}"
+  },
+  {
+    "id": "schlegel2016interactive",
+    "citeKey": "schlegel2016interactive",
+    "type": "misc",
+    "title": "Interactive Support for Malware Classification",
+    "authors": [
+      "Udo Schlegel"
+    ],
+    "venue": "Bachelor Thesis, University of Konstanz",
+    "venueBadge": "Bachelor Thesis",
+    "year": 2016,
+    "pages": "",
+    "selected": false,
+    "featured": false,
+    "categories": [
+      "Theses",
+      "Visual Analytics"
+    ],
+    "arxiv": null,
+    "links": {
+      "kops": "https://kops.uni-konstanz.de/entities/publication/bca844a0-22b3-4193-b725-f9366c215225"
+    },
+    "bibtex": "@misc{schlegel2016interactive,\n  title={Interactive Support for Malware Classification},\n  author={Schlegel, Udo},\n  year={2016},\n  howpublished={Bachelor Thesis, University of Konstanz},\n  url={https://kops.uni-konstanz.de/entities/publication/bca844a0-22b3-4193-b725-f9366c215225}\n}"
   },
   {
     "id": "streeb2015using",
@@ -1818,9 +1847,9 @@ export function Publications() {
                     ))}
                   </div>
                   <div className="pub-title-line">
-                    {pub.links && pub.links.din ? (
+                    {pub.links && (pub.links.din || pub.links.kops) ? (
                       <a
-                        href={pub.links.din}
+                        href={pub.links.din || pub.links.kops}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="pub-title-text pub-title-link"
@@ -1834,6 +1863,16 @@ export function Publications() {
                       {pub.links && pub.links.din && (
                         <a href={pub.links.din} target="_blank" rel="noopener noreferrer">
                           din
+                        </a>
+                      )}
+                      {pub.links && pub.links.kops && (
+                        <a href={pub.links.kops} target="_blank" rel="noopener noreferrer">
+                          kops
+                        </a>
+                      )}
+                      {pub.links && pub.links.project && (
+                        <a href={pub.links.project} target="_blank" rel="noopener noreferrer">
+                          site
                         </a>
                       )}
                       {pub.arxiv && (

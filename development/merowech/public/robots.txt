@@ -1,3 +1,55 @@
+# Block compliant bots, search crawlers, and AI crawlers
 # https://www.robotstxt.org/robotstxt.html
+
+# Anthropic
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Claude-Web
+User-agent: anthropic-ai
+Disallow: /
+
+# OpenAI
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+Disallow: /
+
+# Google (AI training / grounding opt-out token)
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Apple (generative model training opt-out token)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+User-agent: meta-externalagent
+User-agent: meta-webindexer
+User-agent: meta-externalfetcher
+User-agent: FacebookBot
+Disallow: /
+
+# Other AI & scraper bots
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: Diffbot
+User-agent: cohere-ai
+User-agent: Omgilibot
+User-agent: YouBot
+Disallow: /
+
+# Allow standard search crawlers to fetch HTML so they read <meta name="robots" content="noindex, nofollow">,
+# while keeping source/build files out of crawls
 User-agent: *
-Disallow:
+Disallow: /development/

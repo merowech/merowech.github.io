@@ -31,7 +31,7 @@ const PROJECTS = [
     title: 'VIKING & DIN SPEC 91517',
     role: '€3M+ R&D Consortium & Technical Standardization',
     description:
-      'Coordinated 10 partners (incl. BSI, BKA, LKA NRW, Fraunhofer IDMT) on trustworthy AI and co-authored DIN SPEC 91517:2025-05 defining technical, ethical, and legal requirements for trustworthy AI methods.',
+      'Coordinated 10+ partners (incl. BSI, BKA, LKA NRW, Fraunhofer IDMT) on trustworthy AI and co-authored DIN SPEC 91517:2025-05 defining technical, ethical, and legal requirements for trustworthy AI methods.',
     links: [
       {
         label: 'DIN Project',
@@ -52,7 +52,16 @@ const PROJECTS = [
     ]
   },
   {
-    title: 'Open-Source Research & Code (@merowech)',
+    id: 'open-source-merowech',
+    title: (
+      <>
+        Open-Source Research &amp; Code (
+        <a href="https://github.com/merowech" target="_blank" rel="noopener noreferrer">
+          @merowech
+        </a>
+        )
+      </>
+    ),
     role: 'Personal GitHub Repositories',
     description:
       'Implementations across Vision-Language Model robustness (PRSM / CLIP), Concept Bottleneck Models, TS-MULE, and visual analytics.',
@@ -69,7 +78,7 @@ export function Projects() {
 
       <div className="entry-list">
         {PROJECTS.map((proj) => (
-          <article key={proj.title} className="cv-entry cv-entry-compact">
+          <article key={proj.id || proj.title} className="cv-entry cv-entry-compact">
             <div className="entry-row-top">
               <h3 className="entry-org">{proj.title}</h3>
               <span className="entry-inline-links">

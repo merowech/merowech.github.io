@@ -25,10 +25,11 @@ export function About() {
 
       <p className="summary-text">
         Over 9+ years of taking machine learning from research idea to working system, I have
-        combined 40+ peer-reviewed papers (incl. <em>NeurIPS, ICLR, ECML PKDD, TMLR</em>) with 10+
-        years of full-stack development in Python and JavaScript, leading a €3M+, 10-partner
-        applied-AI R&amp;D project from proposal to delivery and shipping production models with
-        industry partners such as Siemens, Huawei, and Corpuls.
+        combined 40+ peer-reviewed papers (incl. <em>NeurIPS, ICLR, ECML-PKDD, TMLR, XAI</em>) with
+        10+ years of full-stack development in Python and JavaScript, leading a €3M+, 10+ partner
+        applied-AI R&amp;D project from proposal to delivery, co-authoring DIN SPEC 91517 on
+        trustworthy AI, and shipping production models with industry partners such as Siemens,
+        Huawei, and Corpuls.
       </p>
     </section>
   );
