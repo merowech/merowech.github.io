@@ -1072,15 +1072,48 @@ dialog.site-dialog::backdrop {
   font-size: 0.88rem;
 }
 
-/* Print Styles */
+.print-only {
+  display: none;
+}
+
+/* Print Styles — Calibrated for a crisp 2-page CV (A4 & Letter) */
+@page {
+  size: A4;
+  margin: 10mm 13mm;
+}
+
 @media print {
-  .no-print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  .site-topbar,
+  .view-segmented,
+  .story-container,
+  .thesis-list,
+  .pub-toolbar,
+  .pub-more-footer,
+  .pub-row-actions,
+  .pub-search-status,
+  .minimal-footer,
+  dialog {
     display: none !important;
   }
 
+  .print-only {
+    display: block !important;
+  }
+
+  .entry-list.print-only {
+    display: grid !important;
+  }
+
   body {
-    font-size: 9.5pt;
-    line-height: 1.4;
+    background: #ffffff;
+    font-size: 8.4pt;
+    line-height: 1.32;
   }
 
   .page-wrap {
@@ -1088,16 +1121,218 @@ dialog.site-dialog::backdrop {
     max-inline-size: none;
   }
 
+  .cv-main {
+    padding-block-end: 0;
+  }
+
+  /* Centered Compact Resume Masthead */
   .masthead {
-    padding-block: 0 0.75rem;
+    padding-block: 0 8pt;
+    text-align: center;
   }
 
+  .masthead-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5pt;
+    text-align: center;
+  }
+
+  .masthead-avatar {
+    inline-size: 36pt;
+    block-size: 36pt;
+  }
+
+  .masthead-identity {
+    text-align: center;
+  }
+
+  .masthead-name {
+    font-size: 20pt;
+    line-height: 1.1;
+    margin-block-end: 2.5pt;
+  }
+
+  .masthead-subtitle {
+    font-size: 7.4pt;
+    margin-block-end: 2pt;
+  }
+
+  .masthead-location {
+    font-size: 7.8pt;
+    margin-block-end: 0;
+  }
+
+  .masthead-link-groups {
+    margin-block-start: 6pt;
+    gap: 2.5pt;
+  }
+
+  .masthead-links {
+    font-size: 7.6pt;
+    column-gap: 7pt;
+    row-gap: 1.5pt;
+  }
+
+  .masthead-links li + li {
+    padding-inline-start: 7pt;
+  }
+
+  .masthead-links .svg-icon {
+    inline-size: 9pt;
+    block-size: 9pt;
+  }
+
+  /* Section Spacing & Headings */
   .cv-section {
-    padding-block: 0.65rem 0.25rem;
+    padding-block: 6.5pt 2pt;
   }
 
-  .cv-entry,
-  .pub-row {
+  .cv-heading-row {
+    margin-block-end: 5.5pt;
+  }
+
+  .cv-heading {
+    font-size: 9.2pt;
+    margin-block-end: 5.5pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .cv-heading::before {
+    inline-size: 2pt;
+    block-size: 9pt;
+  }
+
+  /* Page 1 -> Page 2 clean split with generous Page 2 breathing room */
+  #projects {
+    break-before: page;
+    page-break-before: always;
+    padding-block: 2pt 8pt;
+  }
+
+  #projects .cv-heading {
+    margin-block-end: 8pt;
+  }
+
+  #projects .entry-list {
+    gap: 10pt;
+  }
+
+  #projects .entry-row-sub {
+    margin-block: 1.5pt 3.5pt;
+  }
+
+  #skills,
+  #publications,
+  #education {
+    padding-block-start: 10pt;
+  }
+
+  /* About / Summary */
+  .about-paragraph {
+    font-size: 8.3pt;
+    line-height: 1.35;
+    margin-block-end: 4.5pt;
+  }
+
+  .summary-text {
+    font-size: 8.2pt;
+    line-height: 1.34;
+  }
+
+  /* Work Experience, Projects & Education */
+  .entry-list {
+    gap: 6.5pt;
+  }
+
+  .cv-entry {
     break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .entry-org {
+    font-size: 8.8pt;
+  }
+
+  .entry-location,
+  .entry-date,
+  .entry-inline-links {
+    font-size: 7.8pt;
+  }
+
+  .entry-row-sub {
+    margin-block: 0.5pt 2pt;
+  }
+
+  .entry-role {
+    font-size: 7.1pt;
+  }
+
+  .entry-bullets {
+    padding-inline-start: 11pt;
+    font-size: 8.2pt;
+    line-height: 1.3;
+  }
+
+  .entry-bullets li {
+    margin-block-end: 1.5pt;
+  }
+
+  .entry-compact-desc {
+    font-size: 8.1pt;
+    line-height: 1.3;
+  }
+
+  /* Clean print links (still clickable in Save-as-PDF without underline clutter) */
+  a,
+  .entry-bullets a,
+  .about-paragraph a,
+  .pub-title-link {
+    text-decoration: none;
+  }
+
+  /* Skills */
+  .skills-table {
+    gap: 2.5pt;
+  }
+
+  .skills-row {
+    grid-template-columns: 92pt minmax(0, 1fr);
+    gap: 8pt;
+    font-size: 8.2pt;
+    line-height: 1.3;
+  }
+
+  /* Selected Publications */
+  .pub-table {
+    gap: 4.5pt;
+  }
+
+  .pub-row {
+    grid-template-columns: 26pt minmax(0, 1fr) auto;
+    gap: 7pt;
+    font-size: 8.1pt;
+    line-height: 1.28;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .pub-year {
+    font-size: 7.8pt;
+  }
+
+  .pub-authors-line {
+    font-size: 7.6pt;
+    margin-block-end: 0.5pt;
+  }
+
+  .pub-title-line {
+    font-size: 8.2pt;
+  }
+
+  .pub-venue-right {
+    font-size: 7.8pt;
   }
 }

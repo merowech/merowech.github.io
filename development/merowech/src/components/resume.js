@@ -545,38 +545,38 @@ export function ExperienceSection() {
         </div>
       </div>
 
-      {!narrativeMode ? (
-        <div className="entry-list">
-          {WORK_EXPERIENCE.map((job) => (
-            <article key={job.id} className="cv-entry">
-              <div className="entry-row-top">
-                <h3 className="entry-org">
-                  {job.companyUrl ? (
-                    <a href={job.companyUrl} target="_blank" rel="noopener noreferrer">
-                      {job.company}
-                    </a>
-                  ) : (
-                    job.company
-                  )}
-                </h3>
-                <span className="entry-location">{job.location}</span>
-              </div>
+      <div className={`entry-list ${narrativeMode ? 'print-only' : ''}`}>
+        {WORK_EXPERIENCE.map((job) => (
+          <article key={job.id} className="cv-entry">
+            <div className="entry-row-top">
+              <h3 className="entry-org">
+                {job.companyUrl ? (
+                  <a href={job.companyUrl} target="_blank" rel="noopener noreferrer">
+                    {job.company}
+                  </a>
+                ) : (
+                  job.company
+                )}
+              </h3>
+              <span className="entry-location">{job.location}</span>
+            </div>
 
-              <div className="entry-row-sub">
-                <span className="entry-role">{job.title}</span>
-                <span className="entry-date">{job.years}</span>
-              </div>
+            <div className="entry-row-sub">
+              <span className="entry-role">{job.title}</span>
+              <span className="entry-date">{job.years}</span>
+            </div>
 
-              <ul className="entry-bullets">
-                {job.bullets.map((b, idx) => (
-                  <li key={idx}>{b}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-      ) : (
-        <div className="story-container">
+            <ul className="entry-bullets">
+              {job.bullets.map((b, idx) => (
+                <li key={idx}>{b}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      {narrativeMode && (
+        <div className="story-container no-print">
           <div className="story-intro-bar no-print">
             <p className="story-intro-note">
               How a student web-maintenance job in Konstanz grew into a decade of building
@@ -697,53 +697,53 @@ export function EducationSection() {
         </div>
       </div>
 
-      {!thesisView ? (
-        <div className="entry-list">
-          {EDUCATION.map((edu) => (
-            <article key={edu.id} className="cv-entry">
-              <div className="entry-row-top">
-                <h3 className="entry-org">{edu.school}</h3>
-                <span className="entry-location">{edu.location}</span>
-              </div>
+      <div className={`entry-list ${thesisView ? 'print-only' : ''}`}>
+        {EDUCATION.map((edu) => (
+          <article key={edu.id} className="cv-entry">
+            <div className="entry-row-top">
+              <h3 className="entry-org">{edu.school}</h3>
+              <span className="entry-location">{edu.location}</span>
+            </div>
 
-              <div className="entry-row-sub">
-                <span className="entry-role">{edu.degree}</span>
-                <span className="entry-date">{edu.graduated}</span>
-              </div>
+            <div className="entry-row-sub">
+              <span className="entry-role">{edu.degree}</span>
+              <span className="entry-date">{edu.graduated}</span>
+            </div>
 
-              <ul className="entry-bullets">
-                <li>
-                  {edu.emphasis}
-                  <br />
-                  Thesis:{' '}
-                  {edu.thesisUrl ? (
-                    <a href={edu.thesisUrl} target="_blank" rel="noopener noreferrer">
-                      <strong>{edu.thesis}</strong>
-                    </a>
-                  ) : (
+            <ul className="entry-bullets">
+              <li>
+                {edu.emphasis}
+                <br />
+                Thesis:{' '}
+                {edu.thesisUrl ? (
+                  <a href={edu.thesisUrl} target="_blank" rel="noopener noreferrer">
                     <strong>{edu.thesis}</strong>
-                  )}
-                  {edu.link && (
-                    <>
-                      <br />
-                      More information at:{' '}
-                      <a
-                        href={edu.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mono-link"
-                      >
-                        {edu.link}
-                      </a>
-                    </>
-                  )}
-                </li>
-              </ul>
-            </article>
-          ))}
-        </div>
-      ) : (
-        <div className="thesis-list">
+                  </a>
+                ) : (
+                  <strong>{edu.thesis}</strong>
+                )}
+                {edu.link && (
+                  <>
+                    <br />
+                    More information at:{' '}
+                    <a
+                      href={edu.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mono-link"
+                    >
+                      {edu.link}
+                    </a>
+                  </>
+                )}
+              </li>
+            </ul>
+          </article>
+        ))}
+      </div>
+
+      {thesisView && (
+        <div className="thesis-list no-print">
           {EDUCATION.map((edu) => (
             <article key={edu.id} className="thesis-entry">
               <div className="entry-row-top">

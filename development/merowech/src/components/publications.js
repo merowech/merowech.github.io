@@ -1762,7 +1762,10 @@ export function Publications() {
   return (
     <section id="publications" className="cv-section" tabIndex={-1}>
       <h2 className="cv-heading">
-        <span>{showAll || isSearching ? 'Publications' : 'Selected Publications'}</span>
+        <span className="no-print">
+          {showAll || isSearching ? 'Publications' : 'Selected Publications'}
+        </span>
+        <span className="print-only">Selected Publications</span>
       </h2>
 
       <div className="pub-toolbar no-print">
@@ -1830,7 +1833,10 @@ export function Publications() {
               `${pub.title} Schlegel`
             )}`;
             return (
-              <article key={pub.id} className="pub-row">
+              <article
+                key={pub.id}
+                className={`pub-row ${pub.selected ? '' : 'no-print'}`.trim()}
+              >
                 <div className="pub-year">{pub.year}</div>
 
                 <div className="pub-main">
